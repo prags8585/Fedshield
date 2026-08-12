@@ -1,0 +1,16 @@
+kafka-python==2.0.2
+redis==5.0.4
+neo4j==5.20.0
+pydantic==2.7.1
+python-dotenv==1.0.1
+torch==2.3.0
+flwr==1.8.0
+langgraph==0.1.5
+openai==2.45.0
+faker==25.0.1
+scikit-learn==1.6.1
+matplotlib==3.9.4
+seaborn==0.13.2
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+openpyxl==3.1.5

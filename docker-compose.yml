@@ -1,0 +1,112 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: fedshieldv2-redis
+    ports:
+      - "6380:6379" # 6379 is taken by the original FedShield stack on this host
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  neo4j:
+    image: neo4j:5.20-community
+    container_name: fedshieldv2-neo4j
+    environment:
+      NEO4J_AUTH: ${NEO4J_USER}/${NEO4J_PASSWORD}
+    ports:
+      - "7475:7474" # browser UI (7474 taken by the original FedShield stack)
+      - "7688:7687" # bolt (7687 taken by the original FedShield stack)
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    container_name: fedshieldv2-kafka
+    environment:
+      CLUSTER_ID: "5cjiadxHRgK2zzJkVbvUsw"
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093,PLAINTEXT_HOST://0.0.0.0:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+    ports:
+      - "29092:29092"
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "localhost:9092"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+
+  fl_server:
+    build:
+      context: .
+      dockerfile: fl_server/Dockerfile
+    container_name: fedshieldv2-fl-server
+    env_file: .env
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  branch_loc1:
+    build:
+      context: .
+      dockerfile: branch_node/Dockerfile
+    container_name: fedshieldv2-branch-loc1
+    environment:
+      BRANCH_ID: loc1
+    env_file: .env
+    depends_on:
+      kafka:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+
+  branch_loc2:
+    build:
+      context: .
+      dockerfile: branch_node/Dockerfile
+    container_name: fedshieldv2-branch-loc2
+    environment:
+      BRANCH_ID: loc2
+    env_file: .env
+    depends_on:
+      kafka:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+
+  branch_loc3:
+    build:
+      context: .
+      dockerfile: branch_node/Dockerfile
+    container_name: fedshieldv2-branch-loc3
+    environment:
+      BRANCH_ID: loc3
+    env_file: .env
+    depends_on:
+      kafka:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+
+volumes:
+  neo4j_data:
