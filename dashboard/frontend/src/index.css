@@ -1,0 +1,14 @@
+:root {
+  color-scheme: dark;
+  font: 14px/1.5 ui-monospace, 'SF Mono', Consolas, monospace;
+}
+
+body {
+  margin: 0;
+  background: #0d0e12;
+  color: #d7d9e0;
+}
+
+#root {
+  min-height: 100vh;
+}
