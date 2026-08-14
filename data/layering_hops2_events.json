@@ -1,0 +1,412 @@
+[
+  {
+    "event_id": "evt_571dd179-5a4c-4749-a586-aea5afb983ea",
+    "kafka_timestamp": "2026-07-05T07:17:25.541Z",
+    "branch_id": "loc1",
+    "transaction": {
+      "txn_id": "tx_2fa75f69baa44e74",
+      "timestamp": "2026-07-05T07:17:23.750Z",
+      "amount": 8067.49,
+      "currency": "USD",
+      "txn_type": "CASH_DEPOSIT",
+      "channel": "BRANCH",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "CASH",
+      "routing_number": null,
+      "account_type": null,
+      "customer_id": null,
+      "customer_name": null
+    },
+    "beneficiary": {
+      "account_number": "9000000002",
+      "routing_number": "071000013",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000001",
+      "customer_name": "Amanda Hamilton"
+    },
+    "telemetry": {
+      "ip_address": "35.245.140.60",
+      "device_id": "dv_a5b73c1c7bc3",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "East Christopherchester",
+        "state": "AR",
+        "country": "US",
+        "latitude": 37.95143,
+        "longitude": -91.77127
+      }
+    },
+    "_emit_offset_seconds": 0.48290857777777785
+  },
+  {
+    "event_id": "evt_71152bdf-2726-4a0b-9783-655acb24c13d",
+    "kafka_timestamp": "2026-07-05T07:29:09.883Z",
+    "branch_id": "loc2",
+    "transaction": {
+      "txn_id": "tx_ee58fa24a51249f1",
+      "timestamp": "2026-07-05T07:29:07.557Z",
+      "amount": 8973.23,
+      "currency": "USD",
+      "txn_type": "CASH_DEPOSIT",
+      "channel": "BRANCH",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "CASH",
+      "routing_number": null,
+      "account_type": null,
+      "customer_id": null,
+      "customer_name": null
+    },
+    "beneficiary": {
+      "account_number": "9000000004",
+      "routing_number": "071000026",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000003",
+      "customer_name": "Joshua Brown"
+    },
+    "telemetry": {
+      "ip_address": "197.114.66.165",
+      "device_id": "dv_5da11b751613",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "New Jamieside",
+        "state": "NE",
+        "country": "US",
+        "latitude": 38.17492,
+        "longitude": -122.2608
+      }
+    },
+    "_emit_offset_seconds": 2.437926113888889
+  },
+  {
+    "event_id": "evt_86446943-8f65-411a-83c7-662338cf6873",
+    "kafka_timestamp": "2026-07-05T07:35:57.089Z",
+    "branch_id": "loc3",
+    "transaction": {
+      "txn_id": "tx_da87bced65024b69",
+      "timestamp": "2026-07-05T07:35:56.020Z",
+      "amount": 8650.85,
+      "currency": "USD",
+      "txn_type": "CASH_DEPOSIT",
+      "channel": "BRANCH",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "CASH",
+      "routing_number": null,
+      "account_type": null,
+      "customer_id": null,
+      "customer_name": null
+    },
+    "beneficiary": {
+      "account_number": "9000000006",
+      "routing_number": "071000039",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000005",
+      "customer_name": "John Williams"
+    },
+    "telemetry": {
+      "ip_address": "190.153.59.237",
+      "device_id": "dv_4d820ce2027a",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "Port Angelamouth",
+        "state": "MA",
+        "country": "US",
+        "latitude": 47.38093,
+        "longitude": -122.23484
+      }
+    },
+    "_emit_offset_seconds": 3.572546694444444
+  },
+  {
+    "event_id": "evt_b718944e-ee33-4adb-a315-9db0d941a24c",
+    "kafka_timestamp": "2026-07-05T09:25:40.297Z",
+    "branch_id": "loc1",
+    "transaction": {
+      "txn_id": "tx_b2a96428bcc149e4",
+      "timestamp": "2026-07-05T09:25:37.947Z",
+      "amount": 7958.73,
+      "currency": "USD",
+      "txn_type": "WIRE",
+      "channel": "WIRE_ROOM",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000002",
+      "routing_number": "071000013",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000001",
+      "customer_name": "Amanda Hamilton"
+    },
+    "beneficiary": {
+      "account_number": "9000000003",
+      "routing_number": "071000013",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000002",
+      "customer_name": "Jennifer Cherry"
+    },
+    "telemetry": {
+      "ip_address": "213.200.130.177",
+      "device_id": "dv_e21e5b2e1985",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "East Christopherchester",
+        "state": "AR",
+        "country": "US",
+        "latitude": 39.09112,
+        "longitude": -94.41551
+      }
+    },
+    "_emit_offset_seconds": 21.855676094444444
+  },
+  {
+    "event_id": "evt_b5eede96-5c2d-4b47-97f6-546eab71eafb",
+    "kafka_timestamp": "2026-07-05T09:52:21.041Z",
+    "branch_id": "loc2",
+    "transaction": {
+      "txn_id": "tx_4208549631034db1",
+      "timestamp": "2026-07-05T09:52:18.740Z",
+      "amount": 8878.24,
+      "currency": "USD",
+      "txn_type": "WIRE",
+      "channel": "WIRE_ROOM",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000004",
+      "routing_number": "071000026",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000003",
+      "customer_name": "Joshua Brown"
+    },
+    "beneficiary": {
+      "account_number": "9000000005",
+      "routing_number": "071000039",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000004",
+      "customer_name": "Robert Hale"
+    },
+    "telemetry": {
+      "ip_address": "210.87.169.89",
+      "device_id": "dv_4df49d030dc5",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "New Jamieside",
+        "state": "NE",
+        "country": "US",
+        "latitude": 44.73941,
+        "longitude": -93.12577
+      }
+    },
+    "_emit_offset_seconds": 26.30232388611111
+  },
+  {
+    "event_id": "evt_3e06806b-f5f3-4c56-8400-720af4b53527",
+    "kafka_timestamp": "2026-07-05T10:09:06.897Z",
+    "branch_id": "loc3",
+    "transaction": {
+      "txn_id": "tx_2793113023944671",
+      "timestamp": "2026-07-05T10:09:04.422Z",
+      "amount": 8494.04,
+      "currency": "USD",
+      "txn_type": "ACH",
+      "channel": "ONLINE",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000006",
+      "routing_number": "071000039",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000005",
+      "customer_name": "John Williams"
+    },
+    "beneficiary": {
+      "account_number": "9000000007",
+      "routing_number": "071000013",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000006",
+      "customer_name": "Brandon Nelson"
+    },
+    "telemetry": {
+      "ip_address": "187.26.170.199",
+      "device_id": "dv_b4b392ec9382",
+      "device_type": "WEB",
+      "location": {
+        "city": "Port Angelamouth",
+        "state": "MA",
+        "country": "US",
+        "latitude": 44.27804,
+        "longitude": -88.27205
+      }
+    },
+    "_emit_offset_seconds": 29.09588510277778
+  },
+  {
+    "event_id": "evt_5a3fb4a9-f3c6-44c0-89c7-0a93367bbe72",
+    "kafka_timestamp": "2026-07-05T11:36:04.983Z",
+    "branch_id": "loc1",
+    "transaction": {
+      "txn_id": "tx_44f773fff9ea4c60",
+      "timestamp": "2026-07-05T11:36:02.712Z",
+      "amount": 7871.58,
+      "currency": "USD",
+      "txn_type": "WIRE",
+      "channel": "WIRE_ROOM",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000003",
+      "routing_number": "071000013",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000002",
+      "customer_name": "Jennifer Cherry"
+    },
+    "beneficiary": {
+      "account_number": "9000000001",
+      "routing_number": "071000026",
+      "account_type": "BUSINESS",
+      "customer_id": "CUST-90000000",
+      "customer_name": "Chris Curtis"
+    },
+    "telemetry": {
+      "ip_address": "205.128.194.134",
+      "device_id": "dv_7c10f1c51751",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "New Micheleport",
+        "state": "MT",
+        "country": "US",
+        "latitude": 38.70734,
+        "longitude": -77.02303
+      }
+    },
+    "_emit_offset_seconds": 43.59113549166667
+  },
+  {
+    "event_id": "evt_c4c6813d-e0c4-420b-b4cf-56ecbad787df",
+    "kafka_timestamp": "2026-07-05T12:09:53.245Z",
+    "branch_id": "loc3",
+    "transaction": {
+      "txn_id": "tx_e82f1c425e9b48e6",
+      "timestamp": "2026-07-05T12:09:50.114Z",
+      "amount": 8751.41,
+      "currency": "USD",
+      "txn_type": "ACH",
+      "channel": "ONLINE",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000005",
+      "routing_number": "071000039",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000004",
+      "customer_name": "Robert Hale"
+    },
+    "beneficiary": {
+      "account_number": "9000000001",
+      "routing_number": "071000026",
+      "account_type": "BUSINESS",
+      "customer_id": "CUST-90000000",
+      "customer_name": "Chris Curtis"
+    },
+    "telemetry": {
+      "ip_address": "218.242.31.5",
+      "device_id": "dv_1675cbbe61b5",
+      "device_type": "WEB",
+      "location": {
+        "city": "North Autumn",
+        "state": "NC",
+        "country": "US",
+        "latitude": 39.09112,
+        "longitude": -94.41551
+      }
+    },
+    "_emit_offset_seconds": 49.22280791666666
+  },
+  {
+    "event_id": "evt_b78e9f40-5f8d-4881-b3ec-e25397a56cac",
+    "kafka_timestamp": "2026-07-05T12:19:44.970Z",
+    "branch_id": "loc1",
+    "transaction": {
+      "txn_id": "tx_23d39ecb3a1e4c51",
+      "timestamp": "2026-07-05T12:19:41.917Z",
+      "amount": 8442.24,
+      "currency": "USD",
+      "txn_type": "WIRE",
+      "channel": "WIRE_ROOM",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000007",
+      "routing_number": "071000013",
+      "account_type": "CHECKING",
+      "customer_id": "CUST-90000006",
+      "customer_name": "Brandon Nelson"
+    },
+    "beneficiary": {
+      "account_number": "9000000001",
+      "routing_number": "071000026",
+      "account_type": "BUSINESS",
+      "customer_id": "CUST-90000000",
+      "customer_name": "Chris Curtis"
+    },
+    "telemetry": {
+      "ip_address": "135.126.127.94",
+      "device_id": "dv_83c3466ccbb6",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "North Jessicaport",
+        "state": "SD",
+        "country": "US",
+        "latitude": 28.90054,
+        "longitude": -81.26367
+      }
+    },
+    "_emit_offset_seconds": 50.86670617777777
+  },
+  {
+    "event_id": "evt_a27fdfec-94fc-41aa-a7a7-fc2680f4623b",
+    "kafka_timestamp": "2026-07-05T12:28:31.901Z",
+    "branch_id": "loc2",
+    "transaction": {
+      "txn_id": "tx_c28ba5b1a67847ee",
+      "timestamp": "2026-07-05T12:28:29.894Z",
+      "amount": 25065.23,
+      "currency": "USD",
+      "txn_type": "CASH_WITHDRAWAL",
+      "channel": "BRANCH",
+      "status": "POSTED"
+    },
+    "originator": {
+      "account_number": "9000000001",
+      "routing_number": "071000026",
+      "account_type": "BUSINESS",
+      "customer_id": "CUST-90000000",
+      "customer_name": "Chris Curtis"
+    },
+    "beneficiary": {
+      "account_number": "CASH_OUT",
+      "routing_number": null,
+      "account_type": null,
+      "customer_id": null,
+      "customer_name": null
+    },
+    "telemetry": {
+      "ip_address": "82.101.72.230",
+      "device_id": "dv_c308f3bb4d3b",
+      "device_type": "BRANCH_TELLER",
+      "location": {
+        "city": "Port Amandastad",
+        "state": "OR",
+        "country": "US",
+        "latitude": 33.7207,
+        "longitude": -116.21677
+      }
+    },
+    "_emit_offset_seconds": 52.33330840555555
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "scenario": "layering",
+  "hops": 4,
+  "seed": 42,
+  "scenario_start": "2024-12-13T02:00:00.000Z",
+  "span_hours": 6.0,
+  "compress_seconds": 60.0,
+  "consolidation_branch": "loc3",
+  "consolidation_account": "9000000001",
+  "consolidation_customer": "CUST-90000000",
+  "chains": {
+    "p1": {
+      "placement_branch": "loc1",
+      "placement_account": "9000000002",
+      "placement_customer": "CUST-90000001",
+      "placement_amount": 8057.21,
+      "intermediate_accounts": [
+        "9000000003",
+        "9000000004",
+        "9000000005"
+      ],
+      "final_amount_into_consolidation": 7637.6
+    },
+    "p2": {
+      "placement_branch": "loc2",
+      "placement_account": "9000000006",
+      "placement_customer": "CUST-90000005",
+      "placement_amount": 9593.81,
+      "intermediate_accounts": [
+        "9000000007",
+        "9000000008",
+        "9000000009"
+      ],
+      "final_amount_into_consolidation": 9160.14
+    },
+    "p3": {
+      "placement_branch": "loc3",
+      "placement_account": "9000000010",
+      "placement_customer": "CUST-90000009",
+      "placement_amount": 9449.08,
+      "intermediate_accounts": [
+        "9000000011",
+        "9000000012",
+        "9000000013"
+      ],
+      "final_amount_into_consolidation": 9093.35
+    }
+  },
+  "exit_amount": 25891.09,
+  "exit_txn_id": "tx_6641479cdc034a56",
+  "fraud_accounts": [
+    "9000000001",
+    "9000000002",
+    "9000000003",
+    "9000000004",
+    "9000000005",
+    "9000000006",
+    "9000000007",
+    "9000000008",
+    "9000000009",
+    "9000000010",
+    "9000000011",
+    "9000000012",
+    "9000000013"
+  ],
+  "fraud_customers": [
+    "CUST-90000000",
+    "CUST-90000001",
+    "CUST-90000002",
+    "CUST-90000003",
+    "CUST-90000004",
+    "CUST-90000005",
+    "CUST-90000006",
+    "CUST-90000007",
+    "CUST-90000008",
+    "CUST-90000009",
+    "CUST-90000010",
+    "CUST-90000011",
+    "CUST-90000012"
+  ],
+  "fraud_txn_ids": [
+    "tx_6625a42a369d4cd0",
+    "tx_8ec4ed4abf42480d",
+    "tx_f129dfe8ce694dc4",
+    "tx_0c0a2a1c062a4617",
+    "tx_dccfb1880e774f02",
+    "tx_cf0f675ac39a4072",
+    "tx_8507a7ae761144a2",
+    "tx_442e0d3087944f9f",
+    "tx_3cca6c959eac415b",
+    "tx_5b25d8dccf594600",
+    "tx_751c4332fa1243f7",
+    "tx_d846465676e54bc9",
+    "tx_5e8e7f4a5e1444e2",
+    "tx_3049620aa1024ca8",
+    "tx_50aac04b8d0a4d3b",
+    "tx_6641479cdc034a56"
+  ]
+}

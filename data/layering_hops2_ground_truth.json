@@ -1,0 +1,75 @@
+{
+  "scenario": "layering",
+  "hops": 2,
+  "seed": 7,
+  "scenario_start": "2026-07-05T07:14:29.903Z",
+  "span_hours": 6.0,
+  "compress_seconds": 60.0,
+  "consolidation_branch": "loc2",
+  "consolidation_account": "9000000001",
+  "consolidation_customer": "CUST-90000000",
+  "chains": {
+    "p1": {
+      "placement_branch": "loc1",
+      "placement_account": "9000000002",
+      "placement_customer": "CUST-90000001",
+      "placement_amount": 8067.49,
+      "intermediate_accounts": [
+        "9000000003"
+      ],
+      "final_amount_into_consolidation": 7871.58
+    },
+    "p2": {
+      "placement_branch": "loc2",
+      "placement_account": "9000000004",
+      "placement_customer": "CUST-90000003",
+      "placement_amount": 8973.23,
+      "intermediate_accounts": [
+        "9000000005"
+      ],
+      "final_amount_into_consolidation": 8751.41
+    },
+    "p3": {
+      "placement_branch": "loc3",
+      "placement_account": "9000000006",
+      "placement_customer": "CUST-90000005",
+      "placement_amount": 8650.85,
+      "intermediate_accounts": [
+        "9000000007"
+      ],
+      "final_amount_into_consolidation": 8442.24
+    }
+  },
+  "exit_amount": 25065.23,
+  "exit_txn_id": "tx_c28ba5b1a67847ee",
+  "fraud_accounts": [
+    "9000000001",
+    "9000000002",
+    "9000000003",
+    "9000000004",
+    "9000000005",
+    "9000000006",
+    "9000000007"
+  ],
+  "fraud_customers": [
+    "CUST-90000000",
+    "CUST-90000001",
+    "CUST-90000002",
+    "CUST-90000003",
+    "CUST-90000004",
+    "CUST-90000005",
+    "CUST-90000006"
+  ],
+  "fraud_txn_ids": [
+    "tx_2fa75f69baa44e74",
+    "tx_b2a96428bcc149e4",
+    "tx_44f773fff9ea4c60",
+    "tx_ee58fa24a51249f1",
+    "tx_4208549631034db1",
+    "tx_e82f1c425e9b48e6",
+    "tx_da87bced65024b69",
+    "tx_2793113023944671",
+    "tx_23d39ecb3a1e4c51",
+    "tx_c28ba5b1a67847ee"
+  ]
+}

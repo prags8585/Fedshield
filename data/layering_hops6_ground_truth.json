@@ -1,0 +1,123 @@
+{
+  "scenario": "layering",
+  "hops": 6,
+  "seed": 7,
+  "scenario_start": "2026-07-05T07:14:30.195Z",
+  "span_hours": 6.0,
+  "compress_seconds": 60.0,
+  "consolidation_branch": "loc2",
+  "consolidation_account": "9000000001",
+  "consolidation_customer": "CUST-90000000",
+  "chains": {
+    "p1": {
+      "placement_branch": "loc1",
+      "placement_account": "9000000002",
+      "placement_customer": "CUST-90000001",
+      "placement_amount": 8067.49,
+      "intermediate_accounts": [
+        "9000000003",
+        "9000000004",
+        "9000000005",
+        "9000000006",
+        "9000000007"
+      ],
+      "final_amount_into_consolidation": 7548.85
+    },
+    "p2": {
+      "placement_branch": "loc2",
+      "placement_account": "9000000008",
+      "placement_customer": "CUST-90000007",
+      "placement_amount": 8212.52,
+      "intermediate_accounts": [
+        "9000000009",
+        "9000000010",
+        "9000000011",
+        "9000000012",
+        "9000000013"
+      ],
+      "final_amount_into_consolidation": 7533.88
+    },
+    "p3": {
+      "placement_branch": "loc3",
+      "placement_account": "9000000014",
+      "placement_customer": "CUST-90000013",
+      "placement_amount": 9228.9,
+      "intermediate_accounts": [
+        "9000000015",
+        "9000000016",
+        "9000000017",
+        "9000000018",
+        "9000000019"
+      ],
+      "final_amount_into_consolidation": 8449.75
+    }
+  },
+  "exit_amount": 23532.48,
+  "exit_txn_id": "tx_f8e3b69ab2ee4838",
+  "fraud_accounts": [
+    "9000000001",
+    "9000000002",
+    "9000000003",
+    "9000000004",
+    "9000000005",
+    "9000000006",
+    "9000000007",
+    "9000000008",
+    "9000000009",
+    "9000000010",
+    "9000000011",
+    "9000000012",
+    "9000000013",
+    "9000000014",
+    "9000000015",
+    "9000000016",
+    "9000000017",
+    "9000000018",
+    "9000000019"
+  ],
+  "fraud_customers": [
+    "CUST-90000000",
+    "CUST-90000001",
+    "CUST-90000002",
+    "CUST-90000003",
+    "CUST-90000004",
+    "CUST-90000005",
+    "CUST-90000006",
+    "CUST-90000007",
+    "CUST-90000008",
+    "CUST-90000009",
+    "CUST-90000010",
+    "CUST-90000011",
+    "CUST-90000012",
+    "CUST-90000013",
+    "CUST-90000014",
+    "CUST-90000015",
+    "CUST-90000016",
+    "CUST-90000017",
+    "CUST-90000018"
+  ],
+  "fraud_txn_ids": [
+    "tx_5310d635189c4477",
+    "tx_2c18c93aa33441a3",
+    "tx_43e44cc505804447",
+    "tx_b1ab963c6d8740f9",
+    "tx_74f54d0c217b4400",
+    "tx_2ee331ed285b45c0",
+    "tx_1ee688c3ac1f4375",
+    "tx_54353c6e405e488e",
+    "tx_f061114bef284e92",
+    "tx_993c46c5bfd94c39",
+    "tx_1a083550de6b4f6e",
+    "tx_05627f25ca724e78",
+    "tx_c2d22a2344b14023",
+    "tx_195b09ad913b49d9",
+    "tx_e2da9c5948a14056",
+    "tx_6566fe66b8f340bf",
+    "tx_b34118d1ac4149ff",
+    "tx_30f9d86feff34a98",
+    "tx_1b0f30e296c9490e",
+    "tx_78789a3bc68c4d83",
+    "tx_e47dfecff60a422c",
+    "tx_f8e3b69ab2ee4838"
+  ]
+}

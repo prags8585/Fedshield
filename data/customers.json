@@ -1,0 +1,5106 @@
+{
+  "customers": [
+    {
+      "customer_id": "CUST-10000000",
+      "ssn_last4": "1824",
+      "full_name": "Allison Hill",
+      "home_city": "East Jill",
+      "home_state": "TX",
+      "created_date": "2023-12-02"
+    },
+    {
+      "customer_id": "CUST-10000001",
+      "ssn_last4": "3657",
+      "full_name": "Leslie Johnson",
+      "home_city": "East Jessetown",
+      "home_state": "OH",
+      "created_date": "2018-07-18"
+    },
+    {
+      "customer_id": "CUST-10000002",
+      "ssn_last4": "8935",
+      "full_name": "Kimberly Robinson",
+      "home_city": "Lisatown",
+      "home_state": "WV",
+      "created_date": "2024-07-25"
+    },
+    {
+      "customer_id": "CUST-10000003",
+      "ssn_last4": "0488",
+      "full_name": "Gina Moore",
+      "home_city": "Curtisfurt",
+      "home_state": "CT",
+      "created_date": "2020-02-18"
+    },
+    {
+      "customer_id": "CUST-10000004",
+      "ssn_last4": "9863",
+      "full_name": "Dennis Williams",
+      "home_city": "Herrerafurt",
+      "home_state": "CO",
+      "created_date": "2022-01-18"
+    },
+    {
+      "customer_id": "CUST-10000005",
+      "ssn_last4": "8928",
+      "full_name": "Lisa Hensley",
+      "home_city": "Lake Chad",
+      "home_state": "TN",
+      "created_date": "2018-10-31"
+    },
+    {
+      "customer_id": "CUST-10000006",
+      "ssn_last4": "4557",
+      "full_name": "Bobby Hall",
+      "home_city": "South Joshuastad",
+      "home_state": "GA",
+      "created_date": "2020-03-30"
+    },
+    {
+      "customer_id": "CUST-10000007",
+      "ssn_last4": "6924",
+      "full_name": "Derek Zuniga",
+      "home_city": "New Cynthiaside",
+      "home_state": "VA",
+      "created_date": "2018-12-31"
+    },
+    {
+      "customer_id": "CUST-10000008",
+      "ssn_last4": "5514",
+      "full_name": "Devin Schaefer",
+      "home_city": "Lake Mark",
+      "home_state": "WI",
+      "created_date": "2024-04-08"
+    },
+    {
+      "customer_id": "CUST-10000009",
+      "ssn_last4": "5881",
+      "full_name": "Andrew Stewart",
+      "home_city": "Carlshire",
+      "home_state": "FM",
+      "created_date": "2023-09-11"
+    },
+    {
+      "customer_id": "CUST-10000010",
+      "ssn_last4": "0711",
+      "full_name": "Jonathan Wilkerson",
+      "home_city": "Thomasberg",
+      "home_state": "IA",
+      "created_date": "2023-12-18"
+    },
+    {
+      "customer_id": "CUST-10000011",
+      "ssn_last4": "1291",
+      "full_name": "Nicole Patterson",
+      "home_city": "Coxberg",
+      "home_state": "NY",
+      "created_date": "2021-06-20"
+    },
+    {
+      "customer_id": "CUST-10000012",
+      "ssn_last4": "5925",
+      "full_name": "Shannon Hernandez",
+      "home_city": "Port Erin",
+      "home_state": "PA",
+      "created_date": "2017-03-15"
+    },
+    {
+      "customer_id": "CUST-10000013",
+      "ssn_last4": "3733",
+      "full_name": "Zachary Rice",
+      "home_city": "Lake Jenniferside",
+      "home_state": "WV",
+      "created_date": "2019-03-21"
+    },
+    {
+      "customer_id": "CUST-10000014",
+      "ssn_last4": "3814",
+      "full_name": "Ashley Graham",
+      "home_city": "Smithview",
+      "home_state": "NY",
+      "created_date": "2024-02-17"
+    },
+    {
+      "customer_id": "CUST-10000015",
+      "ssn_last4": "5977",
+      "full_name": "Ashley Garrett",
+      "home_city": "East Nathaniel",
+      "home_state": "GA",
+      "created_date": "2021-12-03"
+    },
+    {
+      "customer_id": "CUST-10000016",
+      "ssn_last4": "4374",
+      "full_name": "Kerry Smith",
+      "home_city": "Tracyville",
+      "home_state": "MN",
+      "created_date": "2025-04-15"
+    },
+    {
+      "customer_id": "CUST-10000017",
+      "ssn_last4": "8751",
+      "full_name": "Elizabeth Brown",
+      "home_city": "North Jessicaland",
+      "home_state": "WV",
+      "created_date": "2021-11-08"
+    },
+    {
+      "customer_id": "CUST-10000018",
+      "ssn_last4": "4422",
+      "full_name": "Matthew Arroyo",
+      "home_city": "West Allison",
+      "home_state": "PA",
+      "created_date": "2020-10-08"
+    },
+    {
+      "customer_id": "CUST-10000019",
+      "ssn_last4": "0916",
+      "full_name": "Joshua Blair",
+      "home_city": "Lake Larry",
+      "home_state": "TN",
+      "created_date": "2023-01-07"
+    },
+    {
+      "customer_id": "CUST-10000020",
+      "ssn_last4": "5168",
+      "full_name": "Joseph Martinez",
+      "home_city": "North Matthew",
+      "home_state": "OR",
+      "created_date": "2022-01-24"
+    },
+    {
+      "customer_id": "CUST-10000021",
+      "ssn_last4": "9292",
+      "full_name": "Adrienne Zimmerman",
+      "home_city": "East Carloston",
+      "home_state": "VI",
+      "created_date": "2019-11-07"
+    },
+    {
+      "customer_id": "CUST-10000022",
+      "ssn_last4": "6482",
+      "full_name": "Diana Washington",
+      "home_city": "Lake Selena",
+      "home_state": "OK",
+      "created_date": "2022-04-15"
+    },
+    {
+      "customer_id": "CUST-10000023",
+      "ssn_last4": "4040",
+      "full_name": "John Russell",
+      "home_city": "North Donnastad",
+      "home_state": "NE",
+      "created_date": "2020-08-25"
+    },
+    {
+      "customer_id": "CUST-10000024",
+      "ssn_last4": "9560",
+      "full_name": "Amy Valdez",
+      "home_city": "North Richardmouth",
+      "home_state": "AS",
+      "created_date": "2025-02-12"
+    },
+    {
+      "customer_id": "CUST-10000025",
+      "ssn_last4": "8348",
+      "full_name": "Connor West",
+      "home_city": "Whitemouth",
+      "home_state": "IA",
+      "created_date": "2025-03-31"
+    },
+    {
+      "customer_id": "CUST-10000026",
+      "ssn_last4": "1796",
+      "full_name": "Robert Chase",
+      "home_city": "North Deniseside",
+      "home_state": "MP",
+      "created_date": "2016-09-19"
+    },
+    {
+      "customer_id": "CUST-10000027",
+      "ssn_last4": "6916",
+      "full_name": "Paul Young",
+      "home_city": "Tuckerborough",
+      "home_state": "VI",
+      "created_date": "2020-07-19"
+    },
+    {
+      "customer_id": "CUST-10000028",
+      "ssn_last4": "7668",
+      "full_name": "James Galloway",
+      "home_city": "Saramouth",
+      "home_state": "LA",
+      "created_date": "2020-10-07"
+    },
+    {
+      "customer_id": "CUST-10000029",
+      "ssn_last4": "0188",
+      "full_name": "Whitney Peters",
+      "home_city": "Mooreport",
+      "home_state": "IL",
+      "created_date": "2026-03-07"
+    },
+    {
+      "customer_id": "CUST-10000030",
+      "ssn_last4": "4371",
+      "full_name": "Kimberly Adkins",
+      "home_city": "North Breannahaven",
+      "home_state": "PW",
+      "created_date": "2025-01-11"
+    },
+    {
+      "customer_id": "CUST-10000031",
+      "ssn_last4": "2591",
+      "full_name": "Tyler Miller",
+      "home_city": "North Brooke",
+      "home_state": "TX",
+      "created_date": "2025-02-13"
+    },
+    {
+      "customer_id": "CUST-10000032",
+      "ssn_last4": "4315",
+      "full_name": "Todd Hudson",
+      "home_city": "New Christophershire",
+      "home_state": "OK",
+      "created_date": "2021-10-04"
+    },
+    {
+      "customer_id": "CUST-10000033",
+      "ssn_last4": "4889",
+      "full_name": "Christina Moran",
+      "home_city": "West Randy",
+      "home_state": "TN",
+      "created_date": "2022-12-22"
+    },
+    {
+      "customer_id": "CUST-10000034",
+      "ssn_last4": "2646",
+      "full_name": "Timothy Walls",
+      "home_city": "South Christineshire",
+      "home_state": "CT",
+      "created_date": "2017-04-19"
+    },
+    {
+      "customer_id": "CUST-10000035",
+      "ssn_last4": "0319",
+      "full_name": "Derek Mahoney",
+      "home_city": "East Mikeburgh",
+      "home_state": "NV",
+      "created_date": "2024-11-03"
+    },
+    {
+      "customer_id": "CUST-10000036",
+      "ssn_last4": "5038",
+      "full_name": "Lisa Archer",
+      "home_city": "Lake Lisaport",
+      "home_state": "TN",
+      "created_date": "2017-08-07"
+    },
+    {
+      "customer_id": "CUST-10000037",
+      "ssn_last4": "9295",
+      "full_name": "Deborah Preston",
+      "home_city": "West Juan",
+      "home_state": "IL",
+      "created_date": "2023-09-09"
+    },
+    {
+      "customer_id": "CUST-10000038",
+      "ssn_last4": "1133",
+      "full_name": "Mark Baker",
+      "home_city": "Kington",
+      "home_state": "CO",
+      "created_date": "2022-11-12"
+    },
+    {
+      "customer_id": "CUST-10000039",
+      "ssn_last4": "9007",
+      "full_name": "Amanda Cook",
+      "home_city": "Lake Tina",
+      "home_state": "GA",
+      "created_date": "2023-12-04"
+    },
+    {
+      "customer_id": "CUST-10000040",
+      "ssn_last4": "9938",
+      "full_name": "Jessica Smith",
+      "home_city": "Lake Rebeccaside",
+      "home_state": "AZ",
+      "created_date": "2024-11-06"
+    },
+    {
+      "customer_id": "CUST-10000041",
+      "ssn_last4": "3295",
+      "full_name": "Brittany Anderson",
+      "home_city": "Michaelton",
+      "home_state": "MH",
+      "created_date": "2020-02-14"
+    },
+    {
+      "customer_id": "CUST-10000042",
+      "ssn_last4": "6118",
+      "full_name": "Mary Gomez",
+      "home_city": "Dicksonberg",
+      "home_state": "IA",
+      "created_date": "2025-02-23"
+    },
+    {
+      "customer_id": "CUST-10000043",
+      "ssn_last4": "1982",
+      "full_name": "Rita Keith",
+      "home_city": "East Jillmouth",
+      "home_state": "WY",
+      "created_date": "2025-10-21"
+    },
+    {
+      "customer_id": "CUST-10000044",
+      "ssn_last4": "0344",
+      "full_name": "Sharon Cochran",
+      "home_city": "Erikville",
+      "home_state": "MS",
+      "created_date": "2025-03-22"
+    },
+    {
+      "customer_id": "CUST-10000045",
+      "ssn_last4": "1163",
+      "full_name": "Courtney Velasquez",
+      "home_city": "Baileybury",
+      "home_state": "IN",
+      "created_date": "2016-10-21"
+    },
+    {
+      "customer_id": "CUST-10000046",
+      "ssn_last4": "5413",
+      "full_name": "Garrett Lin",
+      "home_city": "Michaelhaven",
+      "home_state": "MO",
+      "created_date": "2023-04-24"
+    },
+    {
+      "customer_id": "CUST-10000047",
+      "ssn_last4": "7953",
+      "full_name": "Erin Johnson",
+      "home_city": "Gregoryview",
+      "home_state": "AZ",
+      "created_date": "2017-08-24"
+    },
+    {
+      "customer_id": "CUST-10000048",
+      "ssn_last4": "9355",
+      "full_name": "Nicholas Edwards",
+      "home_city": "South Rachelborough",
+      "home_state": "KS",
+      "created_date": "2017-01-04"
+    },
+    {
+      "customer_id": "CUST-10000049",
+      "ssn_last4": "6669",
+      "full_name": "Joseph Drake",
+      "home_city": "West Ryan",
+      "home_state": "TN",
+      "created_date": "2025-09-14"
+    },
+    {
+      "customer_id": "CUST-10000050",
+      "ssn_last4": "7062",
+      "full_name": "Mary Martinez",
+      "home_city": "Williamchester",
+      "home_state": "MD",
+      "created_date": "2020-07-24"
+    },
+    {
+      "customer_id": "CUST-10000051",
+      "ssn_last4": "0887",
+      "full_name": "Cameron Fisher",
+      "home_city": "Byrdburgh",
+      "home_state": "RI",
+      "created_date": "2022-03-20"
+    },
+    {
+      "customer_id": "CUST-10000052",
+      "ssn_last4": "5559",
+      "full_name": "Roy Torres",
+      "home_city": "South Kristi",
+      "home_state": "PA",
+      "created_date": "2023-01-24"
+    },
+    {
+      "customer_id": "CUST-10000053",
+      "ssn_last4": "8786",
+      "full_name": "Jeremy Lewis",
+      "home_city": "Leonburgh",
+      "home_state": "TN",
+      "created_date": "2017-05-31"
+    },
+    {
+      "customer_id": "CUST-10000054",
+      "ssn_last4": "4563",
+      "full_name": "Mackenzie Rogers",
+      "home_city": "Lake Lance",
+      "home_state": "AS",
+      "created_date": "2018-07-19"
+    },
+    {
+      "customer_id": "CUST-10000055",
+      "ssn_last4": "7260",
+      "full_name": "David Alvarez",
+      "home_city": "South Robertshire",
+      "home_state": "ID",
+      "created_date": "2023-09-12"
+    },
+    {
+      "customer_id": "CUST-10000056",
+      "ssn_last4": "0241",
+      "full_name": "James Hernandez",
+      "home_city": "Port Michelleville",
+      "home_state": "WI",
+      "created_date": "2020-10-15"
+    },
+    {
+      "customer_id": "CUST-10000057",
+      "ssn_last4": "3872",
+      "full_name": "Tyler Holmes",
+      "home_city": "New Johnville",
+      "home_state": "NH",
+      "created_date": "2017-11-23"
+    },
+    {
+      "customer_id": "CUST-10000058",
+      "ssn_last4": "3502",
+      "full_name": "Joseph Hansen",
+      "home_city": "Stephaniemouth",
+      "home_state": "RI",
+      "created_date": "2024-08-27"
+    },
+    {
+      "customer_id": "CUST-10000059",
+      "ssn_last4": "6209",
+      "full_name": "Jessica Meadows",
+      "home_city": "Merrittfort",
+      "home_state": "NV",
+      "created_date": "2019-02-22"
+    },
+    {
+      "customer_id": "CUST-10000060",
+      "ssn_last4": "7454",
+      "full_name": "Mark Cannon",
+      "home_city": "Simsview",
+      "home_state": "NV",
+      "created_date": "2017-05-04"
+    },
+    {
+      "customer_id": "CUST-10000061",
+      "ssn_last4": "9105",
+      "full_name": "Devon Flores",
+      "home_city": "East Edwardfurt",
+      "home_state": "UT",
+      "created_date": "2018-02-01"
+    },
+    {
+      "customer_id": "CUST-10000062",
+      "ssn_last4": "3566",
+      "full_name": "Jason Rivera",
+      "home_city": "Perryborough",
+      "home_state": "MP",
+      "created_date": "2020-09-27"
+    },
+    {
+      "customer_id": "CUST-10000063",
+      "ssn_last4": "0998",
+      "full_name": "Lauren Dominguez",
+      "home_city": "Woodsstad",
+      "home_state": "ME",
+      "created_date": "2024-01-17"
+    },
+    {
+      "customer_id": "CUST-10000064",
+      "ssn_last4": "7811",
+      "full_name": "Tiffany Barnes",
+      "home_city": "South Jeffrey",
+      "home_state": "NE",
+      "created_date": "2021-05-22"
+    },
+    {
+      "customer_id": "CUST-10000065",
+      "ssn_last4": "1312",
+      "full_name": "Michael Yates",
+      "home_city": "Port Tanner",
+      "home_state": "DC",
+      "created_date": "2026-04-20"
+    },
+    {
+      "customer_id": "CUST-10000066",
+      "ssn_last4": "3853",
+      "full_name": "Susan Vargas",
+      "home_city": "North Dawnberg",
+      "home_state": "VI",
+      "created_date": "2021-02-24"
+    },
+    {
+      "customer_id": "CUST-10000067",
+      "ssn_last4": "4033",
+      "full_name": "James Lewis",
+      "home_city": "Matthewfurt",
+      "home_state": "KY",
+      "created_date": "2024-01-12"
+    },
+    {
+      "customer_id": "CUST-10000068",
+      "ssn_last4": "9562",
+      "full_name": "Darlene Miller",
+      "home_city": "Lake Amberstad",
+      "home_state": "IN",
+      "created_date": "2023-01-08"
+    },
+    {
+      "customer_id": "CUST-10000069",
+      "ssn_last4": "5147",
+      "full_name": "Marissa Webster",
+      "home_city": "East Mary",
+      "home_state": "RI",
+      "created_date": "2018-01-31"
+    },
+    {
+      "customer_id": "CUST-10000070",
+      "ssn_last4": "4915",
+      "full_name": "Michael Elliott",
+      "home_city": "South Holly",
+      "home_state": "WI",
+      "created_date": "2020-03-25"
+    },
+    {
+      "customer_id": "CUST-10000071",
+      "ssn_last4": "1188",
+      "full_name": "Tracey Higgins",
+      "home_city": "West Daniel",
+      "home_state": "AK",
+      "created_date": "2025-10-14"
+    },
+    {
+      "customer_id": "CUST-10000072",
+      "ssn_last4": "1638",
+      "full_name": "Susan Brooks",
+      "home_city": "North Brittany",
+      "home_state": "MP",
+      "created_date": "2022-10-17"
+    },
+    {
+      "customer_id": "CUST-10000073",
+      "ssn_last4": "4345",
+      "full_name": "Raymond Jefferson",
+      "home_city": "Port Tonyaton",
+      "home_state": "MI",
+      "created_date": "2021-11-09"
+    },
+    {
+      "customer_id": "CUST-10000074",
+      "ssn_last4": "1127",
+      "full_name": "Andrea Holland",
+      "home_city": "Port Robertfort",
+      "home_state": "CT",
+      "created_date": "2020-11-14"
+    },
+    {
+      "customer_id": "CUST-10000075",
+      "ssn_last4": "7179",
+      "full_name": "Steven Stevens",
+      "home_city": "South Gregory",
+      "home_state": "NC",
+      "created_date": "2026-02-23"
+    },
+    {
+      "customer_id": "CUST-10000076",
+      "ssn_last4": "8666",
+      "full_name": "Robert Medina",
+      "home_city": "Marshallshire",
+      "home_state": "KY",
+      "created_date": "2019-10-08"
+    },
+    {
+      "customer_id": "CUST-10000077",
+      "ssn_last4": "4905",
+      "full_name": "Timothy Ramirez",
+      "home_city": "Sanchezmouth",
+      "home_state": "OK",
+      "created_date": "2022-08-17"
+    },
+    {
+      "customer_id": "CUST-10000078",
+      "ssn_last4": "4333",
+      "full_name": "Allen Rosales",
+      "home_city": "South Jason",
+      "home_state": "AS",
+      "created_date": "2019-02-19"
+    },
+    {
+      "customer_id": "CUST-10000079",
+      "ssn_last4": "9064",
+      "full_name": "Kyle Beard",
+      "home_city": "New Stacyland",
+      "home_state": "IA",
+      "created_date": "2023-09-18"
+    },
+    {
+      "customer_id": "CUST-10000080",
+      "ssn_last4": "3450",
+      "full_name": "Peter Vaughn DDS",
+      "home_city": "Westtown",
+      "home_state": "CO",
+      "created_date": "2019-06-29"
+    },
+    {
+      "customer_id": "CUST-10000081",
+      "ssn_last4": "4325",
+      "full_name": "David Beck",
+      "home_city": "Thomashaven",
+      "home_state": "MI",
+      "created_date": "2020-10-16"
+    },
+    {
+      "customer_id": "CUST-10000082",
+      "ssn_last4": "0832",
+      "full_name": "Erin Warner",
+      "home_city": "Kristopherbury",
+      "home_state": "DE",
+      "created_date": "2023-09-23"
+    },
+    {
+      "customer_id": "CUST-10000083",
+      "ssn_last4": "4533",
+      "full_name": "Patrick Tapia",
+      "home_city": "East Javier",
+      "home_state": "NJ",
+      "created_date": "2019-04-25"
+    },
+    {
+      "customer_id": "CUST-10000084",
+      "ssn_last4": "2143",
+      "full_name": "Paige Carlson",
+      "home_city": "Port Jamesbury",
+      "home_state": "MN",
+      "created_date": "2018-05-09"
+    },
+    {
+      "customer_id": "CUST-10000085",
+      "ssn_last4": "9038",
+      "full_name": "Joseph Hill",
+      "home_city": "New Kellyberg",
+      "home_state": "SC",
+      "created_date": "2025-03-09"
+    },
+    {
+      "customer_id": "CUST-10000086",
+      "ssn_last4": "1232",
+      "full_name": "Shane Andrews MD",
+      "home_city": "Petersonton",
+      "home_state": "KS",
+      "created_date": "2025-11-27"
+    },
+    {
+      "customer_id": "CUST-10000087",
+      "ssn_last4": "6049",
+      "full_name": "Rodney Morales",
+      "home_city": "New Crystalton",
+      "home_state": "FL",
+      "created_date": "2018-01-19"
+    },
+    {
+      "customer_id": "CUST-10000088",
+      "ssn_last4": "5050",
+      "full_name": "Elizabeth Mcknight",
+      "home_city": "New Kathybury",
+      "home_state": "WI",
+      "created_date": "2021-10-03"
+    },
+    {
+      "customer_id": "CUST-10000089",
+      "ssn_last4": "0653",
+      "full_name": "Jeremy Dalton",
+      "home_city": "Torreston",
+      "home_state": "RI",
+      "created_date": "2026-02-04"
+    },
+    {
+      "customer_id": "CUST-10000090",
+      "ssn_last4": "1684",
+      "full_name": "Phillip Garrett",
+      "home_city": "Donnaburgh",
+      "home_state": "IA",
+      "created_date": "2018-04-18"
+    },
+    {
+      "customer_id": "CUST-10000091",
+      "ssn_last4": "6658",
+      "full_name": "Aaron Hayes",
+      "home_city": "Carterbury",
+      "home_state": "LA",
+      "created_date": "2023-08-02"
+    },
+    {
+      "customer_id": "CUST-10000092",
+      "ssn_last4": "2662",
+      "full_name": "Jordan Mcdaniel",
+      "home_city": "Kristinshire",
+      "home_state": "TN",
+      "created_date": "2024-07-18"
+    },
+    {
+      "customer_id": "CUST-10000093",
+      "ssn_last4": "2938",
+      "full_name": "Brian Walker",
+      "home_city": "West Margaret",
+      "home_state": "CA",
+      "created_date": "2017-03-01"
+    },
+    {
+      "customer_id": "CUST-10000094",
+      "ssn_last4": "4065",
+      "full_name": "Linda Holloway",
+      "home_city": "Scottmouth",
+      "home_state": "UT",
+      "created_date": "2019-08-03"
+    },
+    {
+      "customer_id": "CUST-10000095",
+      "ssn_last4": "1771",
+      "full_name": "Dillon Fernandez",
+      "home_city": "Millerton",
+      "home_state": "FM",
+      "created_date": "2020-11-09"
+    },
+    {
+      "customer_id": "CUST-10000096",
+      "ssn_last4": "7711",
+      "full_name": "David Davis",
+      "home_city": "Port Emilyview",
+      "home_state": "OK",
+      "created_date": "2016-12-20"
+    },
+    {
+      "customer_id": "CUST-10000097",
+      "ssn_last4": "5728",
+      "full_name": "Julie Pearson",
+      "home_city": "Howardshire",
+      "home_state": "NE",
+      "created_date": "2022-11-13"
+    },
+    {
+      "customer_id": "CUST-10000098",
+      "ssn_last4": "3728",
+      "full_name": "Brandon Bailey MD",
+      "home_city": "Port Eugenechester",
+      "home_state": "UT",
+      "created_date": "2021-06-27"
+    },
+    {
+      "customer_id": "CUST-10000099",
+      "ssn_last4": "6528",
+      "full_name": "Jennifer Hodges",
+      "home_city": "South Christopherview",
+      "home_state": "MD",
+      "created_date": "2017-09-20"
+    },
+    {
+      "customer_id": "CUST-10000100",
+      "ssn_last4": "4573",
+      "full_name": "Sharon Bryan",
+      "home_city": "Lake Mollymouth",
+      "home_state": "MT",
+      "created_date": "2017-02-09"
+    },
+    {
+      "customer_id": "CUST-10000101",
+      "ssn_last4": "8785",
+      "full_name": "Lisa Jimenez",
+      "home_city": "Wolfborough",
+      "home_state": "KY",
+      "created_date": "2022-01-07"
+    },
+    {
+      "customer_id": "CUST-10000102",
+      "ssn_last4": "4279",
+      "full_name": "Jessica Wolfe",
+      "home_city": "North Teresabury",
+      "home_state": "VT",
+      "created_date": "2018-02-21"
+    },
+    {
+      "customer_id": "CUST-10000103",
+      "ssn_last4": "0626",
+      "full_name": "Kristen Davis",
+      "home_city": "South Staceyberg",
+      "home_state": "NM",
+      "created_date": "2025-10-28"
+    },
+    {
+      "customer_id": "CUST-10000104",
+      "ssn_last4": "5139",
+      "full_name": "Michael Perry",
+      "home_city": "Bairdbury",
+      "home_state": "NH",
+      "created_date": "2022-01-15"
+    },
+    {
+      "customer_id": "CUST-10000105",
+      "ssn_last4": "1894",
+      "full_name": "Thomas Romero",
+      "home_city": "Port Chad",
+      "home_state": "WI",
+      "created_date": "2024-05-29"
+    },
+    {
+      "customer_id": "CUST-10000106",
+      "ssn_last4": "4173",
+      "full_name": "Timothy Romero",
+      "home_city": "West Jessicashire",
+      "home_state": "OR",
+      "created_date": "2026-06-25"
+    },
+    {
+      "customer_id": "CUST-10000107",
+      "ssn_last4": "8518",
+      "full_name": "Charles Ryan MD",
+      "home_city": "Gibsonmouth",
+      "home_state": "VI",
+      "created_date": "2018-06-11"
+    },
+    {
+      "customer_id": "CUST-10000108",
+      "ssn_last4": "5409",
+      "full_name": "Laura Hall",
+      "home_city": "Williamsfort",
+      "home_state": "VT",
+      "created_date": "2025-08-19"
+    },
+    {
+      "customer_id": "CUST-10000109",
+      "ssn_last4": "4920",
+      "full_name": "William Sparks",
+      "home_city": "South Tammie",
+      "home_state": "DC",
+      "created_date": "2021-07-21"
+    },
+    {
+      "customer_id": "CUST-10000110",
+      "ssn_last4": "6592",
+      "full_name": "Sheila Sawyer",
+      "home_city": "Garciamouth",
+      "home_state": "AL",
+      "created_date": "2023-09-27"
+    },
+    {
+      "customer_id": "CUST-10000111",
+      "ssn_last4": "6888",
+      "full_name": "Matthew Moore",
+      "home_city": "Harringtonview",
+      "home_state": "MA",
+      "created_date": "2022-10-03"
+    },
+    {
+      "customer_id": "CUST-10000112",
+      "ssn_last4": "9324",
+      "full_name": "Bobby Murphy",
+      "home_city": "Finleyfort",
+      "home_state": "VI",
+      "created_date": "2021-12-09"
+    },
+    {
+      "customer_id": "CUST-10000113",
+      "ssn_last4": "0006",
+      "full_name": "Cynthia Cohen",
+      "home_city": "Wendyland",
+      "home_state": "NE",
+      "created_date": "2026-04-11"
+    },
+    {
+      "customer_id": "CUST-10000114",
+      "ssn_last4": "9502",
+      "full_name": "Michele Garcia",
+      "home_city": "Lake Kevin",
+      "home_state": "AK",
+      "created_date": "2017-01-10"
+    },
+    {
+      "customer_id": "CUST-10000115",
+      "ssn_last4": "3501",
+      "full_name": "Elaine Brooks",
+      "home_city": "East Amanda",
+      "home_state": "OK",
+      "created_date": "2023-05-03"
+    },
+    {
+      "customer_id": "CUST-10000116",
+      "ssn_last4": "2780",
+      "full_name": "Christopher Lynch",
+      "home_city": "Harveybury",
+      "home_state": "NM",
+      "created_date": "2025-08-17"
+    },
+    {
+      "customer_id": "CUST-10000117",
+      "ssn_last4": "5491",
+      "full_name": "Joel King",
+      "home_city": "Elizabethmouth",
+      "home_state": "MH",
+      "created_date": "2019-06-05"
+    },
+    {
+      "customer_id": "CUST-10000118",
+      "ssn_last4": "3848",
+      "full_name": "Angela Landry",
+      "home_city": "Daniellechester",
+      "home_state": "UT",
+      "created_date": "2019-01-20"
+    },
+    {
+      "customer_id": "CUST-10000119",
+      "ssn_last4": "2414",
+      "full_name": "Christina Cruz",
+      "home_city": "Rodriguezfurt",
+      "home_state": "OK",
+      "created_date": "2020-02-18"
+    },
+    {
+      "customer_id": "CUST-10000120",
+      "ssn_last4": "1193",
+      "full_name": "Michael Johnson",
+      "home_city": "Hillshire",
+      "home_state": "VI",
+      "created_date": "2023-05-17"
+    },
+    {
+      "customer_id": "CUST-10000121",
+      "ssn_last4": "9431",
+      "full_name": "Amber Obrien",
+      "home_city": "Wallport",
+      "home_state": "WI",
+      "created_date": "2024-06-30"
+    },
+    {
+      "customer_id": "CUST-10000122",
+      "ssn_last4": "8099",
+      "full_name": "Heather Fields",
+      "home_city": "Ericaberg",
+      "home_state": "SC",
+      "created_date": "2017-07-15"
+    },
+    {
+      "customer_id": "CUST-10000123",
+      "ssn_last4": "0090",
+      "full_name": "Amanda Kramer",
+      "home_city": "New Michaelberg",
+      "home_state": "CO",
+      "created_date": "2025-08-05"
+    },
+    {
+      "customer_id": "CUST-10000124",
+      "ssn_last4": "2881",
+      "full_name": "Jason Gonzalez",
+      "home_city": "Alyssaview",
+      "home_state": "MP",
+      "created_date": "2018-03-16"
+    },
+    {
+      "customer_id": "CUST-10000125",
+      "ssn_last4": "1988",
+      "full_name": "Terry Coffey",
+      "home_city": "Juliemouth",
+      "home_state": "AS",
+      "created_date": "2017-09-18"
+    },
+    {
+      "customer_id": "CUST-10000126",
+      "ssn_last4": "8702",
+      "full_name": "Brenda Levy",
+      "home_city": "Coffeyside",
+      "home_state": "MN",
+      "created_date": "2017-06-20"
+    },
+    {
+      "customer_id": "CUST-10000127",
+      "ssn_last4": "8270",
+      "full_name": "Dennis Martinez",
+      "home_city": "Emilyview",
+      "home_state": "OR",
+      "created_date": "2020-05-08"
+    },
+    {
+      "customer_id": "CUST-10000128",
+      "ssn_last4": "7305",
+      "full_name": "Jacqueline Leonard",
+      "home_city": "Johnsonside",
+      "home_state": "MD",
+      "created_date": "2025-08-25"
+    },
+    {
+      "customer_id": "CUST-10000129",
+      "ssn_last4": "7373",
+      "full_name": "Arthur Colon",
+      "home_city": "Debraville",
+      "home_state": "DC",
+      "created_date": "2017-01-08"
+    },
+    {
+      "customer_id": "CUST-10000130",
+      "ssn_last4": "4543",
+      "full_name": "Zachary Wilson",
+      "home_city": "New Derek",
+      "home_state": "NH",
+      "created_date": "2020-04-02"
+    },
+    {
+      "customer_id": "CUST-10000131",
+      "ssn_last4": "7206",
+      "full_name": "Melissa Fernandez",
+      "home_city": "South Diana",
+      "home_state": "MP",
+      "created_date": "2021-06-04"
+    },
+    {
+      "customer_id": "CUST-10000132",
+      "ssn_last4": "4451",
+      "full_name": "Trevor Johnson",
+      "home_city": "Jeffmouth",
+      "home_state": "IA",
+      "created_date": "2025-01-21"
+    },
+    {
+      "customer_id": "CUST-10000133",
+      "ssn_last4": "1320",
+      "full_name": "Michael Stephens",
+      "home_city": "Bruceview",
+      "home_state": "ID",
+      "created_date": "2026-03-05"
+    },
+    {
+      "customer_id": "CUST-10000134",
+      "ssn_last4": "2503",
+      "full_name": "Samantha Davis",
+      "home_city": "Lake Danielle",
+      "home_state": "AK",
+      "created_date": "2017-01-27"
+    },
+    {
+      "customer_id": "CUST-10000135",
+      "ssn_last4": "5421",
+      "full_name": "William Buchanan",
+      "home_city": "North Maria",
+      "home_state": "OH",
+      "created_date": "2018-08-17"
+    },
+    {
+      "customer_id": "CUST-10000136",
+      "ssn_last4": "6883",
+      "full_name": "Sergio Murphy",
+      "home_city": "Port Rachel",
+      "home_state": "AL",
+      "created_date": "2019-04-28"
+    },
+    {
+      "customer_id": "CUST-10000137",
+      "ssn_last4": "0320",
+      "full_name": "Dr. Kimberly Lindsey",
+      "home_city": "Lake Michelleberg",
+      "home_state": "AL",
+      "created_date": "2020-02-15"
+    },
+    {
+      "customer_id": "CUST-10000138",
+      "ssn_last4": "4892",
+      "full_name": "Leah Smith",
+      "home_city": "Brianchester",
+      "home_state": "NC",
+      "created_date": "2017-09-12"
+    },
+    {
+      "customer_id": "CUST-10000139",
+      "ssn_last4": "6865",
+      "full_name": "Jerome Cox",
+      "home_city": "South Williamton",
+      "home_state": "VA",
+      "created_date": "2024-05-04"
+    },
+    {
+      "customer_id": "CUST-10000140",
+      "ssn_last4": "7140",
+      "full_name": "Kelly Ellis",
+      "home_city": "North Yolandafurt",
+      "home_state": "NE",
+      "created_date": "2023-05-18"
+    },
+    {
+      "customer_id": "CUST-10000141",
+      "ssn_last4": "6624",
+      "full_name": "Theodore Jones Jr.",
+      "home_city": "North David",
+      "home_state": "RI",
+      "created_date": "2022-11-07"
+    },
+    {
+      "customer_id": "CUST-10000142",
+      "ssn_last4": "8751",
+      "full_name": "Erika Vang",
+      "home_city": "Shawnchester",
+      "home_state": "CT",
+      "created_date": "2024-06-09"
+    },
+    {
+      "customer_id": "CUST-10000143",
+      "ssn_last4": "9246",
+      "full_name": "Matthew Rich",
+      "home_city": "South Shannon",
+      "home_state": "IN",
+      "created_date": "2020-09-04"
+    },
+    {
+      "customer_id": "CUST-10000144",
+      "ssn_last4": "2223",
+      "full_name": "Jennifer Blair",
+      "home_city": "Ronaldview",
+      "home_state": "MN",
+      "created_date": "2026-01-11"
+    },
+    {
+      "customer_id": "CUST-10000145",
+      "ssn_last4": "6211",
+      "full_name": "Kara Davis",
+      "home_city": "North Ryanstad",
+      "home_state": "AS",
+      "created_date": "2017-11-11"
+    },
+    {
+      "customer_id": "CUST-10000146",
+      "ssn_last4": "5529",
+      "full_name": "Tyler Hoffman",
+      "home_city": "South Michaelchester",
+      "home_state": "VI",
+      "created_date": "2025-08-28"
+    },
+    {
+      "customer_id": "CUST-10000147",
+      "ssn_last4": "6906",
+      "full_name": "Dwayne Edwards",
+      "home_city": "New Williamberg",
+      "home_state": "TN",
+      "created_date": "2021-05-09"
+    },
+    {
+      "customer_id": "CUST-10000148",
+      "ssn_last4": "0317",
+      "full_name": "Hayley Hawkins",
+      "home_city": "Port Joshuabury",
+      "home_state": "AS",
+      "created_date": "2020-10-29"
+    },
+    {
+      "customer_id": "CUST-10000149",
+      "ssn_last4": "3673",
+      "full_name": "Patricia Howell",
+      "home_city": "New Sarahview",
+      "home_state": "AK",
+      "created_date": "2018-05-12"
+    },
+    {
+      "customer_id": "CUST-10000150",
+      "ssn_last4": "0659",
+      "full_name": "Ellen Morgan",
+      "home_city": "East Mollyshire",
+      "home_state": "TN",
+      "created_date": "2020-07-19"
+    },
+    {
+      "customer_id": "CUST-10000151",
+      "ssn_last4": "0333",
+      "full_name": "Mark Johnson",
+      "home_city": "South Robert",
+      "home_state": "MA",
+      "created_date": "2018-02-18"
+    },
+    {
+      "customer_id": "CUST-10000152",
+      "ssn_last4": "1874",
+      "full_name": "Frederick Pugh",
+      "home_city": "North Ericton",
+      "home_state": "TX",
+      "created_date": "2017-05-19"
+    },
+    {
+      "customer_id": "CUST-10000153",
+      "ssn_last4": "6043",
+      "full_name": "Jeff Lawson",
+      "home_city": "Nelsonhaven",
+      "home_state": "DE",
+      "created_date": "2019-12-30"
+    },
+    {
+      "customer_id": "CUST-10000154",
+      "ssn_last4": "1876",
+      "full_name": "Michael Watkins",
+      "home_city": "Brandonfurt",
+      "home_state": "PA",
+      "created_date": "2017-02-11"
+    },
+    {
+      "customer_id": "CUST-10000155",
+      "ssn_last4": "9481",
+      "full_name": "Tony Saunders",
+      "home_city": "Keithville",
+      "home_state": "AL",
+      "created_date": "2021-07-04"
+    },
+    {
+      "customer_id": "CUST-10000156",
+      "ssn_last4": "6149",
+      "full_name": "Carl Patel",
+      "home_city": "New Angelica",
+      "home_state": "TN",
+      "created_date": "2024-07-26"
+    },
+    {
+      "customer_id": "CUST-10000157",
+      "ssn_last4": "1245",
+      "full_name": "Scott Williams",
+      "home_city": "South Samanthamouth",
+      "home_state": "OK",
+      "created_date": "2020-10-30"
+    },
+    {
+      "customer_id": "CUST-10000158",
+      "ssn_last4": "4941",
+      "full_name": "Mark Roberts",
+      "home_city": "Smithmouth",
+      "home_state": "GA",
+      "created_date": "2024-07-09"
+    },
+    {
+      "customer_id": "CUST-10000159",
+      "ssn_last4": "0672",
+      "full_name": "Sandra Gillespie",
+      "home_city": "South Meganbury",
+      "home_state": "NE",
+      "created_date": "2022-05-31"
+    },
+    {
+      "customer_id": "CUST-10000160",
+      "ssn_last4": "6071",
+      "full_name": "Jennifer Collins",
+      "home_city": "Jeffreyburgh",
+      "home_state": "CA",
+      "created_date": "2021-08-20"
+    },
+    {
+      "customer_id": "CUST-10000161",
+      "ssn_last4": "0207",
+      "full_name": "Jordan Bullock",
+      "home_city": "Michaelberg",
+      "home_state": "IA",
+      "created_date": "2017-08-04"
+    },
+    {
+      "customer_id": "CUST-10000162",
+      "ssn_last4": "7102",
+      "full_name": "Christopher Hernandez",
+      "home_city": "East Stephaniefort",
+      "home_state": "NH",
+      "created_date": "2024-01-21"
+    },
+    {
+      "customer_id": "CUST-10000163",
+      "ssn_last4": "7532",
+      "full_name": "Joann Glass",
+      "home_city": "Michellemouth",
+      "home_state": "FL",
+      "created_date": "2020-12-07"
+    },
+    {
+      "customer_id": "CUST-10000164",
+      "ssn_last4": "8548",
+      "full_name": "Mark Hogan",
+      "home_city": "West Williamport",
+      "home_state": "NH",
+      "created_date": "2021-01-20"
+    },
+    {
+      "customer_id": "CUST-10000165",
+      "ssn_last4": "7921",
+      "full_name": "Ronald Jones",
+      "home_city": "New Brookefurt",
+      "home_state": "NH",
+      "created_date": "2022-04-30"
+    },
+    {
+      "customer_id": "CUST-10000166",
+      "ssn_last4": "9707",
+      "full_name": "Nancy Williams",
+      "home_city": "West Cassidy",
+      "home_state": "NY",
+      "created_date": "2018-01-25"
+    },
+    {
+      "customer_id": "CUST-10000167",
+      "ssn_last4": "1419",
+      "full_name": "Brian Nolan",
+      "home_city": "Toniland",
+      "home_state": "NY",
+      "created_date": "2022-12-24"
+    },
+    {
+      "customer_id": "CUST-10000168",
+      "ssn_last4": "7613",
+      "full_name": "Michael Ritter",
+      "home_city": "West Nathan",
+      "home_state": "LA",
+      "created_date": "2020-05-31"
+    },
+    {
+      "customer_id": "CUST-10000169",
+      "ssn_last4": "5325",
+      "full_name": "Meghan Williams",
+      "home_city": "Cameronville",
+      "home_state": "OH",
+      "created_date": "2023-04-20"
+    },
+    {
+      "customer_id": "CUST-10000170",
+      "ssn_last4": "4232",
+      "full_name": "Nathaniel Douglas",
+      "home_city": "West Christopher",
+      "home_state": "TN",
+      "created_date": "2017-12-22"
+    },
+    {
+      "customer_id": "CUST-10000171",
+      "ssn_last4": "4526",
+      "full_name": "Walter Hale",
+      "home_city": "Andersonland",
+      "home_state": "ME",
+      "created_date": "2022-02-11"
+    },
+    {
+      "customer_id": "CUST-10000172",
+      "ssn_last4": "1402",
+      "full_name": "Erin Anderson",
+      "home_city": "Lake Ellenhaven",
+      "home_state": "MN",
+      "created_date": "2016-10-02"
+    },
+    {
+      "customer_id": "CUST-10000173",
+      "ssn_last4": "9096",
+      "full_name": "Trevor Peterson",
+      "home_city": "Leeberg",
+      "home_state": "FL",
+      "created_date": "2017-05-03"
+    },
+    {
+      "customer_id": "CUST-10000174",
+      "ssn_last4": "8041",
+      "full_name": "Ashley Wise",
+      "home_city": "Lake Matthewberg",
+      "home_state": "PA",
+      "created_date": "2020-04-22"
+    },
+    {
+      "customer_id": "CUST-10000175",
+      "ssn_last4": "4820",
+      "full_name": "Ronald Wise",
+      "home_city": "Lake Samuel",
+      "home_state": "MT",
+      "created_date": "2020-03-08"
+    },
+    {
+      "customer_id": "CUST-10000176",
+      "ssn_last4": "5016",
+      "full_name": "Tracy Bishop",
+      "home_city": "Youngbury",
+      "home_state": "ME",
+      "created_date": "2026-02-24"
+    },
+    {
+      "customer_id": "CUST-10000177",
+      "ssn_last4": "5632",
+      "full_name": "Stephanie Lee",
+      "home_city": "Murrayport",
+      "home_state": "WI",
+      "created_date": "2020-05-11"
+    },
+    {
+      "customer_id": "CUST-10000178",
+      "ssn_last4": "5419",
+      "full_name": "Tracy Montoya",
+      "home_city": "Port John",
+      "home_state": "SD",
+      "created_date": "2021-05-04"
+    },
+    {
+      "customer_id": "CUST-10000179",
+      "ssn_last4": "5023",
+      "full_name": "Timothy Dawson",
+      "home_city": "West Christopherburgh",
+      "home_state": "KY",
+      "created_date": "2021-01-10"
+    },
+    {
+      "customer_id": "CUST-10000180",
+      "ssn_last4": "3155",
+      "full_name": "Sandra Davis",
+      "home_city": "Port Shannon",
+      "home_state": "MI",
+      "created_date": "2025-10-20"
+    },
+    {
+      "customer_id": "CUST-10000181",
+      "ssn_last4": "3033",
+      "full_name": "James Brooks",
+      "home_city": "Vangstad",
+      "home_state": "IN",
+      "created_date": "2016-11-07"
+    },
+    {
+      "customer_id": "CUST-10000182",
+      "ssn_last4": "4530",
+      "full_name": "Sara Santos",
+      "home_city": "East Benjamin",
+      "home_state": "PW",
+      "created_date": "2024-10-20"
+    },
+    {
+      "customer_id": "CUST-10000183",
+      "ssn_last4": "3180",
+      "full_name": "Brenda Thornton",
+      "home_city": "Gilbertland",
+      "home_state": "AK",
+      "created_date": "2019-02-10"
+    },
+    {
+      "customer_id": "CUST-10000184",
+      "ssn_last4": "4952",
+      "full_name": "Kimberly Acosta",
+      "home_city": "Rodriguezport",
+      "home_state": "IA",
+      "created_date": "2019-07-24"
+    },
+    {
+      "customer_id": "CUST-10000185",
+      "ssn_last4": "4494",
+      "full_name": "Jason Bauer",
+      "home_city": "Brownfort",
+      "home_state": "PA",
+      "created_date": "2021-11-21"
+    },
+    {
+      "customer_id": "CUST-10000186",
+      "ssn_last4": "4786",
+      "full_name": "Laura Higgins",
+      "home_city": "Rubenstad",
+      "home_state": "IA",
+      "created_date": "2022-03-26"
+    },
+    {
+      "customer_id": "CUST-10000187",
+      "ssn_last4": "8042",
+      "full_name": "Michael Mills",
+      "home_city": "Carloshaven",
+      "home_state": "ND",
+      "created_date": "2021-08-09"
+    },
+    {
+      "customer_id": "CUST-10000188",
+      "ssn_last4": "4658",
+      "full_name": "Kristen Myers DDS",
+      "home_city": "Zavalaview",
+      "home_state": "WA",
+      "created_date": "2016-09-24"
+    },
+    {
+      "customer_id": "CUST-10000189",
+      "ssn_last4": "3020",
+      "full_name": "Haley Quinn",
+      "home_city": "Port Bonniemouth",
+      "home_state": "DC",
+      "created_date": "2017-01-04"
+    },
+    {
+      "customer_id": "CUST-10000190",
+      "ssn_last4": "7827",
+      "full_name": "Robin Thompson",
+      "home_city": "Pollardfort",
+      "home_state": "SC",
+      "created_date": "2018-05-19"
+    },
+    {
+      "customer_id": "CUST-10000191",
+      "ssn_last4": "8056",
+      "full_name": "Mike Acevedo",
+      "home_city": "West Jamesborough",
+      "home_state": "FM",
+      "created_date": "2016-12-26"
+    },
+    {
+      "customer_id": "CUST-10000192",
+      "ssn_last4": "0878",
+      "full_name": "Kaylee Hays",
+      "home_city": "Kingborough",
+      "home_state": "LA",
+      "created_date": "2020-02-11"
+    },
+    {
+      "customer_id": "CUST-10000193",
+      "ssn_last4": "4978",
+      "full_name": "Sharon Rivera",
+      "home_city": "Port Michealfurt",
+      "home_state": "WA",
+      "created_date": "2020-12-07"
+    },
+    {
+      "customer_id": "CUST-10000194",
+      "ssn_last4": "9143",
+      "full_name": "Gina Lopez",
+      "home_city": "Richardsonhaven",
+      "home_state": "KY",
+      "created_date": "2024-07-08"
+    },
+    {
+      "customer_id": "CUST-10000195",
+      "ssn_last4": "3697",
+      "full_name": "Angela Morrison",
+      "home_city": "New Kelly",
+      "home_state": "CT",
+      "created_date": "2017-05-14"
+    },
+    {
+      "customer_id": "CUST-10000196",
+      "ssn_last4": "4871",
+      "full_name": "Elizabeth Morrison",
+      "home_city": "Jacksonmouth",
+      "home_state": "MI",
+      "created_date": "2021-01-02"
+    },
+    {
+      "customer_id": "CUST-10000197",
+      "ssn_last4": "0986",
+      "full_name": "Susan Mendez",
+      "home_city": "Hillton",
+      "home_state": "CA",
+      "created_date": "2023-03-25"
+    },
+    {
+      "customer_id": "CUST-10000198",
+      "ssn_last4": "3457",
+      "full_name": "Jose Brady",
+      "home_city": "North Douglas",
+      "home_state": "PA",
+      "created_date": "2023-04-19"
+    },
+    {
+      "customer_id": "CUST-10000199",
+      "ssn_last4": "3929",
+      "full_name": "Cameron Young",
+      "home_city": "Michaelshire",
+      "home_state": "AZ",
+      "created_date": "2022-07-29"
+    },
+    {
+      "customer_id": "CUST-10000200",
+      "ssn_last4": "0043",
+      "full_name": "Tiffany Watson",
+      "home_city": "New Devinstad",
+      "home_state": "MO",
+      "created_date": "2019-09-10"
+    },
+    {
+      "customer_id": "CUST-10000201",
+      "ssn_last4": "7699",
+      "full_name": "Tyler Johnson",
+      "home_city": "South April",
+      "home_state": "PW",
+      "created_date": "2022-02-21"
+    },
+    {
+      "customer_id": "CUST-10000202",
+      "ssn_last4": "4632",
+      "full_name": "David Griffin",
+      "home_city": "Heatherfort",
+      "home_state": "ID",
+      "created_date": "2017-10-15"
+    },
+    {
+      "customer_id": "CUST-10000203",
+      "ssn_last4": "4334",
+      "full_name": "Jodi Roach",
+      "home_city": "Osbornmouth",
+      "home_state": "TN",
+      "created_date": "2020-01-07"
+    },
+    {
+      "customer_id": "CUST-10000204",
+      "ssn_last4": "3683",
+      "full_name": "Joshua Vance",
+      "home_city": "Lake Jenna",
+      "home_state": "UT",
+      "created_date": "2022-11-24"
+    },
+    {
+      "customer_id": "CUST-10000205",
+      "ssn_last4": "2330",
+      "full_name": "Katie Martinez",
+      "home_city": "Port Dominic",
+      "home_state": "WY",
+      "created_date": "2021-06-21"
+    },
+    {
+      "customer_id": "CUST-10000206",
+      "ssn_last4": "5039",
+      "full_name": "Kenneth Mcdonald",
+      "home_city": "New Nicole",
+      "home_state": "CA",
+      "created_date": "2019-08-22"
+    },
+    {
+      "customer_id": "CUST-10000207",
+      "ssn_last4": "4982",
+      "full_name": "Dr. Kelly Hammond DVM",
+      "home_city": "East Teresaland",
+      "home_state": "NV",
+      "created_date": "2021-03-11"
+    },
+    {
+      "customer_id": "CUST-10000208",
+      "ssn_last4": "8847",
+      "full_name": "Bethany Calderon",
+      "home_city": "Port Tammy",
+      "home_state": "NE",
+      "created_date": "2021-07-23"
+    },
+    {
+      "customer_id": "CUST-10000209",
+      "ssn_last4": "0653",
+      "full_name": "Sandra Holmes",
+      "home_city": "Fredmouth",
+      "home_state": "VT",
+      "created_date": "2018-10-22"
+    },
+    {
+      "customer_id": "CUST-10000210",
+      "ssn_last4": "4102",
+      "full_name": "Kelly Campbell",
+      "home_city": "West Jamesside",
+      "home_state": "KY",
+      "created_date": "2017-10-24"
+    },
+    {
+      "customer_id": "CUST-10000211",
+      "ssn_last4": "9424",
+      "full_name": "Joseph Shaw",
+      "home_city": "New Shelly",
+      "home_state": "FL",
+      "created_date": "2018-04-09"
+    },
+    {
+      "customer_id": "CUST-10000212",
+      "ssn_last4": "4415",
+      "full_name": "Stephanie Morgan",
+      "home_city": "Port Michelleland",
+      "home_state": "AZ",
+      "created_date": "2025-12-24"
+    },
+    {
+      "customer_id": "CUST-10000213",
+      "ssn_last4": "7708",
+      "full_name": "Deborah Clark",
+      "home_city": "Montgomerytown",
+      "home_state": "NM",
+      "created_date": "2025-05-22"
+    },
+    {
+      "customer_id": "CUST-10000214",
+      "ssn_last4": "9590",
+      "full_name": "Maria Turner",
+      "home_city": "Port Lindsay",
+      "home_state": "MO",
+      "created_date": "2019-07-10"
+    },
+    {
+      "customer_id": "CUST-10000215",
+      "ssn_last4": "1494",
+      "full_name": "Anthony Gonzales",
+      "home_city": "Marshallmouth",
+      "home_state": "PA",
+      "created_date": "2017-12-30"
+    },
+    {
+      "customer_id": "CUST-10000216",
+      "ssn_last4": "5260",
+      "full_name": "Emma Travis",
+      "home_city": "Theresaberg",
+      "home_state": "WV",
+      "created_date": "2020-03-31"
+    },
+    {
+      "customer_id": "CUST-10000217",
+      "ssn_last4": "6744",
+      "full_name": "Emma Owens",
+      "home_city": "Shannonberg",
+      "home_state": "CT",
+      "created_date": "2017-01-27"
+    },
+    {
+      "customer_id": "CUST-10000218",
+      "ssn_last4": "9012",
+      "full_name": "Sharon Barnes",
+      "home_city": "Port Mark",
+      "home_state": "OK",
+      "created_date": "2023-09-22"
+    },
+    {
+      "customer_id": "CUST-10000219",
+      "ssn_last4": "4135",
+      "full_name": "Christopher Ferrell",
+      "home_city": "Jimenezport",
+      "home_state": "NM",
+      "created_date": "2016-10-19"
+    },
+    {
+      "customer_id": "CUST-10000220",
+      "ssn_last4": "6622",
+      "full_name": "Kathy Levy",
+      "home_city": "New Michael",
+      "home_state": "AR",
+      "created_date": "2019-05-13"
+    },
+    {
+      "customer_id": "CUST-10000221",
+      "ssn_last4": "7569",
+      "full_name": "Sarah Chambers",
+      "home_city": "Amandaville",
+      "home_state": "NE",
+      "created_date": "2017-11-25"
+    },
+    {
+      "customer_id": "CUST-10000222",
+      "ssn_last4": "5927",
+      "full_name": "Jacob Powell",
+      "home_city": "South Brettside",
+      "home_state": "ID",
+      "created_date": "2020-03-02"
+    },
+    {
+      "customer_id": "CUST-10000223",
+      "ssn_last4": "0845",
+      "full_name": "James Cole",
+      "home_city": "Marciaville",
+      "home_state": "DC",
+      "created_date": "2026-03-30"
+    },
+    {
+      "customer_id": "CUST-10000224",
+      "ssn_last4": "4719",
+      "full_name": "Robert Morgan",
+      "home_city": "Kariborough",
+      "home_state": "PA",
+      "created_date": "2021-08-15"
+    },
+    {
+      "customer_id": "CUST-10000225",
+      "ssn_last4": "1989",
+      "full_name": "Amber Taylor",
+      "home_city": "Lindahaven",
+      "home_state": "NH",
+      "created_date": "2018-01-18"
+    },
+    {
+      "customer_id": "CUST-10000226",
+      "ssn_last4": "3920",
+      "full_name": "Brenda Velazquez",
+      "home_city": "Franciscoport",
+      "home_state": "OR",
+      "created_date": "2019-11-28"
+    },
+    {
+      "customer_id": "CUST-10000227",
+      "ssn_last4": "9048",
+      "full_name": "Kim Erickson",
+      "home_city": "Thomastown",
+      "home_state": "MN",
+      "created_date": "2019-11-10"
+    },
+    {
+      "customer_id": "CUST-10000228",
+      "ssn_last4": "1858",
+      "full_name": "Jason Parker",
+      "home_city": "New Thomasshire",
+      "home_state": "OK",
+      "created_date": "2018-10-30"
+    },
+    {
+      "customer_id": "CUST-10000229",
+      "ssn_last4": "2522",
+      "full_name": "John Warren",
+      "home_city": "Hernandezbury",
+      "home_state": "AZ",
+      "created_date": "2022-04-02"
+    },
+    {
+      "customer_id": "CUST-10000230",
+      "ssn_last4": "8337",
+      "full_name": "Cheryl Alexander",
+      "home_city": "Hernandezborough",
+      "home_state": "MT",
+      "created_date": "2021-07-20"
+    },
+    {
+      "customer_id": "CUST-10000231",
+      "ssn_last4": "7736",
+      "full_name": "Kaitlyn Charles",
+      "home_city": "Lake Devinborough",
+      "home_state": "OH",
+      "created_date": "2019-10-18"
+    },
+    {
+      "customer_id": "CUST-10000232",
+      "ssn_last4": "6284",
+      "full_name": "Kelly Edwards",
+      "home_city": "South Rhonda",
+      "home_state": "MA",
+      "created_date": "2021-12-28"
+    },
+    {
+      "customer_id": "CUST-10000233",
+      "ssn_last4": "2236",
+      "full_name": "Sharon Becker",
+      "home_city": "Chelseaborough",
+      "home_state": "IA",
+      "created_date": "2019-05-04"
+    },
+    {
+      "customer_id": "CUST-10000234",
+      "ssn_last4": "6798",
+      "full_name": "Todd Hendrix",
+      "home_city": "Janetfort",
+      "home_state": "MD",
+      "created_date": "2021-05-01"
+    },
+    {
+      "customer_id": "CUST-10000235",
+      "ssn_last4": "4377",
+      "full_name": "Taylor Griffith",
+      "home_city": "Davidside",
+      "home_state": "MS",
+      "created_date": "2025-06-16"
+    },
+    {
+      "customer_id": "CUST-10000236",
+      "ssn_last4": "9616",
+      "full_name": "Gregory Mejia",
+      "home_city": "West Bobby",
+      "home_state": "VT",
+      "created_date": "2017-05-10"
+    },
+    {
+      "customer_id": "CUST-10000237",
+      "ssn_last4": "8824",
+      "full_name": "Mary Burgess",
+      "home_city": "East Maria",
+      "home_state": "KY",
+      "created_date": "2025-10-29"
+    },
+    {
+      "customer_id": "CUST-10000238",
+      "ssn_last4": "8903",
+      "full_name": "Breanna Gilbert",
+      "home_city": "East Brent",
+      "home_state": "MH",
+      "created_date": "2021-11-02"
+    },
+    {
+      "customer_id": "CUST-10000239",
+      "ssn_last4": "3090",
+      "full_name": "Amy Gutierrez",
+      "home_city": "Garciaberg",
+      "home_state": "AL",
+      "created_date": "2026-02-20"
+    },
+    {
+      "customer_id": "CUST-10000240",
+      "ssn_last4": "6730",
+      "full_name": "Brooke Delgado",
+      "home_city": "Woodsborough",
+      "home_state": "WV",
+      "created_date": "2026-02-18"
+    },
+    {
+      "customer_id": "CUST-10000241",
+      "ssn_last4": "6246",
+      "full_name": "Matthew Velez",
+      "home_city": "Lake Audreyside",
+      "home_state": "WA",
+      "created_date": "2023-09-29"
+    },
+    {
+      "customer_id": "CUST-10000242",
+      "ssn_last4": "2492",
+      "full_name": "Susan Thompson",
+      "home_city": "North Wendy",
+      "home_state": "MO",
+      "created_date": "2024-05-21"
+    },
+    {
+      "customer_id": "CUST-10000243",
+      "ssn_last4": "8229",
+      "full_name": "Paul Brennan",
+      "home_city": "Nancytown",
+      "home_state": "ME",
+      "created_date": "2022-03-16"
+    },
+    {
+      "customer_id": "CUST-10000244",
+      "ssn_last4": "7213",
+      "full_name": "William Mitchell",
+      "home_city": "Smallberg",
+      "home_state": "PR",
+      "created_date": "2021-07-28"
+    },
+    {
+      "customer_id": "CUST-10000245",
+      "ssn_last4": "0251",
+      "full_name": "Robert Rivera",
+      "home_city": "Wongburgh",
+      "home_state": "AL",
+      "created_date": "2023-11-17"
+    },
+    {
+      "customer_id": "CUST-10000246",
+      "ssn_last4": "2529",
+      "full_name": "Laura Todd",
+      "home_city": "New Melissa",
+      "home_state": "MH",
+      "created_date": "2020-08-05"
+    },
+    {
+      "customer_id": "CUST-10000247",
+      "ssn_last4": "5546",
+      "full_name": "Garrett Morales",
+      "home_city": "East Tinafort",
+      "home_state": "MD",
+      "created_date": "2025-11-08"
+    },
+    {
+      "customer_id": "CUST-10000248",
+      "ssn_last4": "5383",
+      "full_name": "James Griffin",
+      "home_city": "Stephanieport",
+      "home_state": "OR",
+      "created_date": "2023-09-29"
+    },
+    {
+      "customer_id": "CUST-10000249",
+      "ssn_last4": "7994",
+      "full_name": "Matthew Schwartz",
+      "home_city": "Lake Davidport",
+      "home_state": "GA",
+      "created_date": "2020-08-04"
+    },
+    {
+      "customer_id": "CUST-10000250",
+      "ssn_last4": "4708",
+      "full_name": "Stephanie Padilla",
+      "home_city": "Hannahport",
+      "home_state": "MN",
+      "created_date": "2022-09-01"
+    },
+    {
+      "customer_id": "CUST-10000251",
+      "ssn_last4": "1612",
+      "full_name": "Casey Hernandez",
+      "home_city": "Robertside",
+      "home_state": "PW",
+      "created_date": "2021-03-29"
+    },
+    {
+      "customer_id": "CUST-10000252",
+      "ssn_last4": "4906",
+      "full_name": "Mary Robinson",
+      "home_city": "Lake Karen",
+      "home_state": "VI",
+      "created_date": "2024-05-19"
+    },
+    {
+      "customer_id": "CUST-10000253",
+      "ssn_last4": "0919",
+      "full_name": "Kelsey Cox",
+      "home_city": "North Mariahaven",
+      "home_state": "ID",
+      "created_date": "2022-04-02"
+    },
+    {
+      "customer_id": "CUST-10000254",
+      "ssn_last4": "2385",
+      "full_name": "Garrett Meyer",
+      "home_city": "Lake Jamieshire",
+      "home_state": "NM",
+      "created_date": "2017-06-22"
+    },
+    {
+      "customer_id": "CUST-10000255",
+      "ssn_last4": "2950",
+      "full_name": "Rhonda Chavez",
+      "home_city": "Bryantton",
+      "home_state": "OH",
+      "created_date": "2021-02-27"
+    },
+    {
+      "customer_id": "CUST-10000256",
+      "ssn_last4": "6267",
+      "full_name": "Miranda Foster",
+      "home_city": "Lake Jefferyland",
+      "home_state": "AZ",
+      "created_date": "2020-10-10"
+    },
+    {
+      "customer_id": "CUST-10000257",
+      "ssn_last4": "2344",
+      "full_name": "Kimberly Brown",
+      "home_city": "South Anthonychester",
+      "home_state": "HI",
+      "created_date": "2024-03-13"
+    },
+    {
+      "customer_id": "CUST-10000258",
+      "ssn_last4": "7529",
+      "full_name": "Veronica Brewer",
+      "home_city": "Brooksfurt",
+      "home_state": "NV",
+      "created_date": "2025-03-13"
+    },
+    {
+      "customer_id": "CUST-10000259",
+      "ssn_last4": "7622",
+      "full_name": "Jaime Vega",
+      "home_city": "Lake Michelle",
+      "home_state": "DE",
+      "created_date": "2018-05-05"
+    },
+    {
+      "customer_id": "CUST-10000260",
+      "ssn_last4": "1210",
+      "full_name": "Kendra Luna",
+      "home_city": "Port Adam",
+      "home_state": "AK",
+      "created_date": "2026-04-12"
+    },
+    {
+      "customer_id": "CUST-10000261",
+      "ssn_last4": "4901",
+      "full_name": "Nathan Coleman",
+      "home_city": "Morrowbury",
+      "home_state": "NH",
+      "created_date": "2020-01-03"
+    },
+    {
+      "customer_id": "CUST-10000262",
+      "ssn_last4": "4949",
+      "full_name": "Timothy Hardy",
+      "home_city": "North Lisachester",
+      "home_state": "RI",
+      "created_date": "2024-03-03"
+    },
+    {
+      "customer_id": "CUST-10000263",
+      "ssn_last4": "7916",
+      "full_name": "Alexis Harris",
+      "home_city": "New Arthurton",
+      "home_state": "IA",
+      "created_date": "2023-12-01"
+    },
+    {
+      "customer_id": "CUST-10000264",
+      "ssn_last4": "5881",
+      "full_name": "David Robinson",
+      "home_city": "East Williamport",
+      "home_state": "IN",
+      "created_date": "2024-08-30"
+    },
+    {
+      "customer_id": "CUST-10000265",
+      "ssn_last4": "0359",
+      "full_name": "Emma Harper",
+      "home_city": "Joelberg",
+      "home_state": "TN",
+      "created_date": "2021-09-28"
+    },
+    {
+      "customer_id": "CUST-10000266",
+      "ssn_last4": "0803",
+      "full_name": "Donald Hawkins",
+      "home_city": "Lake Erika",
+      "home_state": "OH",
+      "created_date": "2021-06-27"
+    },
+    {
+      "customer_id": "CUST-10000267",
+      "ssn_last4": "3770",
+      "full_name": "Teresa Powers",
+      "home_city": "Heatherchester",
+      "home_state": "FL",
+      "created_date": "2019-07-19"
+    },
+    {
+      "customer_id": "CUST-10000268",
+      "ssn_last4": "4106",
+      "full_name": "Joshua Allen",
+      "home_city": "West Meredith",
+      "home_state": "FL",
+      "created_date": "2024-07-25"
+    },
+    {
+      "customer_id": "CUST-10000269",
+      "ssn_last4": "0645",
+      "full_name": "Kristina Faulkner",
+      "home_city": "South John",
+      "home_state": "IL",
+      "created_date": "2019-11-06"
+    },
+    {
+      "customer_id": "CUST-10000270",
+      "ssn_last4": "9495",
+      "full_name": "Jerry Watson",
+      "home_city": "North Joseph",
+      "home_state": "TX",
+      "created_date": "2022-07-28"
+    },
+    {
+      "customer_id": "CUST-10000271",
+      "ssn_last4": "4835",
+      "full_name": "Benjamin Ballard",
+      "home_city": "South Jason",
+      "home_state": "PW",
+      "created_date": "2019-11-16"
+    },
+    {
+      "customer_id": "CUST-10000272",
+      "ssn_last4": "3289",
+      "full_name": "Alexis Giles",
+      "home_city": "Lake Yvonnefort",
+      "home_state": "PW",
+      "created_date": "2018-12-23"
+    },
+    {
+      "customer_id": "CUST-10000273",
+      "ssn_last4": "5994",
+      "full_name": "Christine Herman",
+      "home_city": "Kimberlyfurt",
+      "home_state": "NH",
+      "created_date": "2021-11-12"
+    },
+    {
+      "customer_id": "CUST-10000274",
+      "ssn_last4": "7894",
+      "full_name": "Dennis Hunt",
+      "home_city": "Owensfort",
+      "home_state": "WV",
+      "created_date": "2024-11-25"
+    },
+    {
+      "customer_id": "CUST-10000275",
+      "ssn_last4": "1886",
+      "full_name": "Jacqueline Gutierrez",
+      "home_city": "Lake Dustin",
+      "home_state": "KS",
+      "created_date": "2022-01-22"
+    },
+    {
+      "customer_id": "CUST-10000276",
+      "ssn_last4": "3696",
+      "full_name": "Michelle Phillips",
+      "home_city": "West Jerry",
+      "home_state": "OK",
+      "created_date": "2024-11-02"
+    },
+    {
+      "customer_id": "CUST-10000277",
+      "ssn_last4": "9131",
+      "full_name": "Mr. Michael Scott PhD",
+      "home_city": "Murraystad",
+      "home_state": "GA",
+      "created_date": "2017-12-17"
+    },
+    {
+      "customer_id": "CUST-10000278",
+      "ssn_last4": "0228",
+      "full_name": "Catherine Preston",
+      "home_city": "New Arthurland",
+      "home_state": "GU",
+      "created_date": "2023-03-14"
+    },
+    {
+      "customer_id": "CUST-10000279",
+      "ssn_last4": "6038",
+      "full_name": "Jennifer Kirby",
+      "home_city": "North Jasmine",
+      "home_state": "AL",
+      "created_date": "2018-09-28"
+    },
+    {
+      "customer_id": "CUST-10000280",
+      "ssn_last4": "6086",
+      "full_name": "Antonio Little",
+      "home_city": "Hopkinstown",
+      "home_state": "AL",
+      "created_date": "2021-11-07"
+    },
+    {
+      "customer_id": "CUST-10000281",
+      "ssn_last4": "0410",
+      "full_name": "Alan Bowen",
+      "home_city": "Andrechester",
+      "home_state": "AS",
+      "created_date": "2025-11-22"
+    },
+    {
+      "customer_id": "CUST-10000282",
+      "ssn_last4": "1035",
+      "full_name": "Thomas Warren",
+      "home_city": "East Christine",
+      "home_state": "KS",
+      "created_date": "2024-08-28"
+    },
+    {
+      "customer_id": "CUST-10000283",
+      "ssn_last4": "6689",
+      "full_name": "James Watson",
+      "home_city": "Stevensbury",
+      "home_state": "UT",
+      "created_date": "2018-10-24"
+    },
+    {
+      "customer_id": "CUST-10000284",
+      "ssn_last4": "4986",
+      "full_name": "Sarah Valdez",
+      "home_city": "North Richardfurt",
+      "home_state": "OH",
+      "created_date": "2021-04-17"
+    },
+    {
+      "customer_id": "CUST-10000285",
+      "ssn_last4": "8807",
+      "full_name": "Michele Miller",
+      "home_city": "Newmanmouth",
+      "home_state": "OK",
+      "created_date": "2026-04-07"
+    },
+    {
+      "customer_id": "CUST-10000286",
+      "ssn_last4": "8850",
+      "full_name": "Stephanie Ellison",
+      "home_city": "East Rachel",
+      "home_state": "UT",
+      "created_date": "2025-05-17"
+    },
+    {
+      "customer_id": "CUST-10000287",
+      "ssn_last4": "2531",
+      "full_name": "Anthony Jones",
+      "home_city": "Rachelshire",
+      "home_state": "TN",
+      "created_date": "2016-11-24"
+    },
+    {
+      "customer_id": "CUST-10000288",
+      "ssn_last4": "8017",
+      "full_name": "Emily Ali",
+      "home_city": "Port Lori",
+      "home_state": "GU",
+      "created_date": "2020-07-10"
+    },
+    {
+      "customer_id": "CUST-10000289",
+      "ssn_last4": "0536",
+      "full_name": "Christopher Allen",
+      "home_city": "Rhodesside",
+      "home_state": "MA",
+      "created_date": "2020-05-18"
+    },
+    {
+      "customer_id": "CUST-10000290",
+      "ssn_last4": "3868",
+      "full_name": "Rachel Norris",
+      "home_city": "New Juliestad",
+      "home_state": "AR",
+      "created_date": "2017-07-16"
+    },
+    {
+      "customer_id": "CUST-10000291",
+      "ssn_last4": "6018",
+      "full_name": "Billy Jacobs",
+      "home_city": "Novakmouth",
+      "home_state": "AK",
+      "created_date": "2022-11-11"
+    },
+    {
+      "customer_id": "CUST-10000292",
+      "ssn_last4": "3109",
+      "full_name": "Joanne Perez",
+      "home_city": "Reynoldsshire",
+      "home_state": "TN",
+      "created_date": "2020-05-05"
+    },
+    {
+      "customer_id": "CUST-10000293",
+      "ssn_last4": "7450",
+      "full_name": "Elizabeth Wright",
+      "home_city": "North Josephfurt",
+      "home_state": "VT",
+      "created_date": "2024-05-07"
+    },
+    {
+      "customer_id": "CUST-10000294",
+      "ssn_last4": "9783",
+      "full_name": "James Ward",
+      "home_city": "North Sherrymouth",
+      "home_state": "MN",
+      "created_date": "2024-02-15"
+    },
+    {
+      "customer_id": "CUST-10000295",
+      "ssn_last4": "3990",
+      "full_name": "Brandon Jordan",
+      "home_city": "Garcialand",
+      "home_state": "MI",
+      "created_date": "2022-01-25"
+    },
+    {
+      "customer_id": "CUST-10000296",
+      "ssn_last4": "1124",
+      "full_name": "Rachel Shields",
+      "home_city": "West Robertland",
+      "home_state": "VA",
+      "created_date": "2025-07-05"
+    },
+    {
+      "customer_id": "CUST-10000297",
+      "ssn_last4": "3817",
+      "full_name": "Vanessa Armstrong",
+      "home_city": "Lake Oscar",
+      "home_state": "DC",
+      "created_date": "2019-03-29"
+    },
+    {
+      "customer_id": "CUST-10000298",
+      "ssn_last4": "9764",
+      "full_name": "Charles Jackson",
+      "home_city": "Robertfort",
+      "home_state": "WY",
+      "created_date": "2017-05-02"
+    },
+    {
+      "customer_id": "CUST-10000299",
+      "ssn_last4": "2129",
+      "full_name": "David Weber",
+      "home_city": "South Daniel",
+      "home_state": "ME",
+      "created_date": "2016-08-21"
+    }
+  ],
+  "accounts": [
+    {
+      "account_number": "4000000001",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000000",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 18667.99,
+      "account_age_days": 1033
+    },
+    {
+      "account_number": "4000000002",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000001",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 18543.54,
+      "account_age_days": 2801
+    },
+    {
+      "account_number": "4000000003",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000002",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 14967.07,
+      "account_age_days": 160
+    },
+    {
+      "account_number": "4000000004",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000003",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 5856.63,
+      "account_age_days": 2099
+    },
+    {
+      "account_number": "4000000005",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000004",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 14250.5,
+      "account_age_days": 2962
+    },
+    {
+      "account_number": "4000000006",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000005",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 5900.8,
+      "account_age_days": 2443
+    },
+    {
+      "account_number": "4000000007",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000006",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 19090.78,
+      "account_age_days": 683
+    },
+    {
+      "account_number": "4000000008",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000007",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 7307.85,
+      "account_age_days": 911
+    },
+    {
+      "account_number": "4000000009",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000008",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 2772.27,
+      "account_age_days": 426
+    },
+    {
+      "account_number": "4000000010",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000009",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 15291.29,
+      "account_age_days": 3335
+    },
+    {
+      "account_number": "4000000011",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000010",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 13637.59,
+      "account_age_days": 1580
+    },
+    {
+      "account_number": "4000000012",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000011",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 20820.41,
+      "account_age_days": 2563
+    },
+    {
+      "account_number": "4000000013",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000012",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 17762.01,
+      "account_age_days": 217
+    },
+    {
+      "account_number": "4000000014",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000013",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 24637.93,
+      "account_age_days": 3533
+    },
+    {
+      "account_number": "4000000015",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000014",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 9813.09,
+      "account_age_days": 1887
+    },
+    {
+      "account_number": "4000000016",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000015",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 9569.43,
+      "account_age_days": 888
+    },
+    {
+      "account_number": "4000000017",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000016",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 15423.71,
+      "account_age_days": 730
+    },
+    {
+      "account_number": "4000000018",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000017",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 4503.36,
+      "account_age_days": 1584
+    },
+    {
+      "account_number": "4000000019",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000018",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 17273.05,
+      "account_age_days": 3482
+    },
+    {
+      "account_number": "4000000020",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000019",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 20634.16,
+      "account_age_days": 3327
+    },
+    {
+      "account_number": "4000000021",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000020",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 7059.65,
+      "account_age_days": 894
+    },
+    {
+      "account_number": "4000000022",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000021",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 5709.35,
+      "account_age_days": 2074
+    },
+    {
+      "account_number": "4000000023",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000022",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 4000.35,
+      "account_age_days": 601
+    },
+    {
+      "account_number": "4000000024",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000023",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 18801.84,
+      "account_age_days": 1784
+    },
+    {
+      "account_number": "4000000025",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000024",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 9368.91,
+      "account_age_days": 596
+    },
+    {
+      "account_number": "4000000026",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000025",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 2727.28,
+      "account_age_days": 222
+    },
+    {
+      "account_number": "4000000027",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000026",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 15872.43,
+      "account_age_days": 3274
+    },
+    {
+      "account_number": "4000000028",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000027",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 9926.8,
+      "account_age_days": 2470
+    },
+    {
+      "account_number": "4000000029",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000028",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 24291.42,
+      "account_age_days": 3555
+    },
+    {
+      "account_number": "4000000030",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000029",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 17201.9,
+      "account_age_days": 2229
+    },
+    {
+      "account_number": "4000000031",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000030",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 3233.03,
+      "account_age_days": 1810
+    },
+    {
+      "account_number": "4000000032",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000031",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 579.51,
+      "account_age_days": 2987
+    },
+    {
+      "account_number": "4000000033",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000032",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 12938.2,
+      "account_age_days": 465
+    },
+    {
+      "account_number": "4000000034",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000033",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 4244.56,
+      "account_age_days": 3153
+    },
+    {
+      "account_number": "4000000035",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000034",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 15174.14,
+      "account_age_days": 2031
+    },
+    {
+      "account_number": "4000000036",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000035",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23262.92,
+      "account_age_days": 3629
+    },
+    {
+      "account_number": "4000000037",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000036",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 1919.17,
+      "account_age_days": 3626
+    },
+    {
+      "account_number": "4000000038",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000037",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 2598.51,
+      "account_age_days": 2020
+    },
+    {
+      "account_number": "4000000039",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000038",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 3645.59,
+      "account_age_days": 1976
+    },
+    {
+      "account_number": "4000000040",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000039",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 6993.89,
+      "account_age_days": 3603
+    },
+    {
+      "account_number": "4000000041",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000040",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 24126.89,
+      "account_age_days": 2238
+    },
+    {
+      "account_number": "4000000042",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000041",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 10275.31,
+      "account_age_days": 2781
+    },
+    {
+      "account_number": "4000000043",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000042",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22540.55,
+      "account_age_days": 1879
+    },
+    {
+      "account_number": "4000000044",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000043",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 6005.08,
+      "account_age_days": 1414
+    },
+    {
+      "account_number": "4000000045",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000044",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 14916.78,
+      "account_age_days": 59
+    },
+    {
+      "account_number": "4000000046",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000045",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 6109.07,
+      "account_age_days": 158
+    },
+    {
+      "account_number": "4000000047",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000046",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 13096.82,
+      "account_age_days": 1170
+    },
+    {
+      "account_number": "4000000048",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000047",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 13711.23,
+      "account_age_days": 2992
+    },
+    {
+      "account_number": "4000000049",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000048",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 6453.43,
+      "account_age_days": 1967
+    },
+    {
+      "account_number": "4000000050",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000049",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 2810.98,
+      "account_age_days": 2729
+    },
+    {
+      "account_number": "4000000051",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000050",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 10877.68,
+      "account_age_days": 1942
+    },
+    {
+      "account_number": "4000000052",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000051",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 1985.01,
+      "account_age_days": 3012
+    },
+    {
+      "account_number": "4000000053",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000052",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 6592.08,
+      "account_age_days": 809
+    },
+    {
+      "account_number": "4000000054",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000053",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 3934.47,
+      "account_age_days": 781
+    },
+    {
+      "account_number": "4000000055",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000054",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 6620.26,
+      "account_age_days": 338
+    },
+    {
+      "account_number": "4000000056",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000055",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 1739.41,
+      "account_age_days": 2244
+    },
+    {
+      "account_number": "4000000057",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000056",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23195.99,
+      "account_age_days": 3506
+    },
+    {
+      "account_number": "4000000058",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000057",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 10457.14,
+      "account_age_days": 2001
+    },
+    {
+      "account_number": "4000000059",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000058",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22609.85,
+      "account_age_days": 704
+    },
+    {
+      "account_number": "4000000060",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000059",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 24640.07,
+      "account_age_days": 1116
+    },
+    {
+      "account_number": "4000000061",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000060",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 10863.68,
+      "account_age_days": 3022
+    },
+    {
+      "account_number": "4000000062",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000061",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 4292.52,
+      "account_age_days": 1245
+    },
+    {
+      "account_number": "4000000063",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000062",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 14689.92,
+      "account_age_days": 2250
+    },
+    {
+      "account_number": "4000000064",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000063",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 1900.55,
+      "account_age_days": 2422
+    },
+    {
+      "account_number": "4000000065",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000064",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 1893.55,
+      "account_age_days": 2110
+    },
+    {
+      "account_number": "4000000066",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000065",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 2178.77,
+      "account_age_days": 308
+    },
+    {
+      "account_number": "4000000067",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000066",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 3437.22,
+      "account_age_days": 2363
+    },
+    {
+      "account_number": "4000000068",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000067",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 15674.85,
+      "account_age_days": 1747
+    },
+    {
+      "account_number": "4000000069",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000068",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 23400.3,
+      "account_age_days": 866
+    },
+    {
+      "account_number": "4000000070",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000069",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 7007.56,
+      "account_age_days": 566
+    },
+    {
+      "account_number": "4000000071",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000070",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 8246.34,
+      "account_age_days": 3109
+    },
+    {
+      "account_number": "4000000072",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000071",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 11728.0,
+      "account_age_days": 2336
+    },
+    {
+      "account_number": "4000000073",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000072",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 13672.04,
+      "account_age_days": 2102
+    },
+    {
+      "account_number": "4000000074",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000073",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 23364.85,
+      "account_age_days": 3638
+    },
+    {
+      "account_number": "4000000075",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000074",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 9553.41,
+      "account_age_days": 676
+    },
+    {
+      "account_number": "4000000076",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000075",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 15486.11,
+      "account_age_days": 3335
+    },
+    {
+      "account_number": "4000000077",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000076",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 16862.65,
+      "account_age_days": 2301
+    },
+    {
+      "account_number": "4000000078",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000077",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23503.79,
+      "account_age_days": 580
+    },
+    {
+      "account_number": "4000000079",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000078",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 22297.96,
+      "account_age_days": 3070
+    },
+    {
+      "account_number": "4000000080",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000079",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 7172.53,
+      "account_age_days": 2507
+    },
+    {
+      "account_number": "4000000081",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000080",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 5488.13,
+      "account_age_days": 2627
+    },
+    {
+      "account_number": "4000000082",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000081",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 6652.47,
+      "account_age_days": 3495
+    },
+    {
+      "account_number": "4000000083",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000082",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 16039.97,
+      "account_age_days": 3427
+    },
+    {
+      "account_number": "4000000084",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000083",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 586.87,
+      "account_age_days": 3188
+    },
+    {
+      "account_number": "4000000085",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000084",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 4458.76,
+      "account_age_days": 1839
+    },
+    {
+      "account_number": "4000000086",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000085",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 14242.22,
+      "account_age_days": 488
+    },
+    {
+      "account_number": "4000000087",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000086",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 13866.96,
+      "account_age_days": 3448
+    },
+    {
+      "account_number": "4000000088",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000087",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 11029.77,
+      "account_age_days": 201
+    },
+    {
+      "account_number": "4000000089",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000088",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 22525.05,
+      "account_age_days": 3290
+    },
+    {
+      "account_number": "4000000090",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000089",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 5646.88,
+      "account_age_days": 1052
+    },
+    {
+      "account_number": "4000000091",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000090",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 19612.85,
+      "account_age_days": 3612
+    },
+    {
+      "account_number": "4000000092",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000091",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 23181.21,
+      "account_age_days": 999
+    },
+    {
+      "account_number": "4000000093",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000092",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 22094.7,
+      "account_age_days": 131
+    },
+    {
+      "account_number": "4000000094",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000093",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 19668.47,
+      "account_age_days": 1716
+    },
+    {
+      "account_number": "4000000095",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000094",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 4400.35,
+      "account_age_days": 2902
+    },
+    {
+      "account_number": "4000000096",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000095",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 21868.09,
+      "account_age_days": 3546
+    },
+    {
+      "account_number": "4000000097",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000096",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 5389.53,
+      "account_age_days": 1915
+    },
+    {
+      "account_number": "4000000098",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000097",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 20603.14,
+      "account_age_days": 3598
+    },
+    {
+      "account_number": "4000000099",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000098",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 1079.78,
+      "account_age_days": 821
+    },
+    {
+      "account_number": "4000000100",
+      "routing_number": "071000013",
+      "branch_id": "loc1",
+      "customer_id": "CUST-10000099",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 7325.77,
+      "account_age_days": 314
+    },
+    {
+      "account_number": "4000000101",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000100",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 16216.3,
+      "account_age_days": 1667
+    },
+    {
+      "account_number": "4000000102",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000101",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 23511.31,
+      "account_age_days": 502
+    },
+    {
+      "account_number": "4000000103",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000102",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 14724.45,
+      "account_age_days": 1117
+    },
+    {
+      "account_number": "4000000104",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000103",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 15116.0,
+      "account_age_days": 1445
+    },
+    {
+      "account_number": "4000000105",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000104",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 15352.12,
+      "account_age_days": 2124
+    },
+    {
+      "account_number": "4000000106",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000105",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22537.87,
+      "account_age_days": 808
+    },
+    {
+      "account_number": "4000000107",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000106",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 17865.24,
+      "account_age_days": 36
+    },
+    {
+      "account_number": "4000000108",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000107",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 9423.43,
+      "account_age_days": 316
+    },
+    {
+      "account_number": "4000000109",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000108",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 16752.99,
+      "account_age_days": 540
+    },
+    {
+      "account_number": "4000000110",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000109",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 16838.88,
+      "account_age_days": 1366
+    },
+    {
+      "account_number": "4000000111",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000110",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 14083.11,
+      "account_age_days": 815
+    },
+    {
+      "account_number": "4000000112",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000111",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 17094.29,
+      "account_age_days": 742
+    },
+    {
+      "account_number": "4000000113",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000112",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 10448.84,
+      "account_age_days": 3444
+    },
+    {
+      "account_number": "4000000114",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000113",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 7529.39,
+      "account_age_days": 1790
+    },
+    {
+      "account_number": "4000000115",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000114",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 11892.21,
+      "account_age_days": 1841
+    },
+    {
+      "account_number": "4000000116",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000115",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 19946.52,
+      "account_age_days": 3290
+    },
+    {
+      "account_number": "4000000117",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000116",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 7452.77,
+      "account_age_days": 2749
+    },
+    {
+      "account_number": "4000000118",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000117",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 20551.37,
+      "account_age_days": 3106
+    },
+    {
+      "account_number": "4000000119",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000118",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 6003.7,
+      "account_age_days": 845
+    },
+    {
+      "account_number": "4000000120",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000119",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 1632.24,
+      "account_age_days": 1976
+    },
+    {
+      "account_number": "4000000121",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000120",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 10653.8,
+      "account_age_days": 2609
+    },
+    {
+      "account_number": "4000000122",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000121",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 18099.47,
+      "account_age_days": 1602
+    },
+    {
+      "account_number": "4000000123",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000122",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 6477.62,
+      "account_age_days": 2717
+    },
+    {
+      "account_number": "4000000124",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000123",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 19571.3,
+      "account_age_days": 926
+    },
+    {
+      "account_number": "4000000125",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000124",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 1730.35,
+      "account_age_days": 1050
+    },
+    {
+      "account_number": "4000000126",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000125",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 3766.81,
+      "account_age_days": 1933
+    },
+    {
+      "account_number": "4000000127",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000126",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 23775.97,
+      "account_age_days": 1842
+    },
+    {
+      "account_number": "4000000128",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000127",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 20848.94,
+      "account_age_days": 2274
+    },
+    {
+      "account_number": "4000000129",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000128",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 18719.56,
+      "account_age_days": 1974
+    },
+    {
+      "account_number": "4000000130",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000129",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 18918.53,
+      "account_age_days": 3470
+    },
+    {
+      "account_number": "4000000131",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000130",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 15855.34,
+      "account_age_days": 1154
+    },
+    {
+      "account_number": "4000000132",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000131",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 17981.85,
+      "account_age_days": 990
+    },
+    {
+      "account_number": "4000000133",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000132",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 8332.88,
+      "account_age_days": 2242
+    },
+    {
+      "account_number": "4000000134",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000133",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 4195.35,
+      "account_age_days": 1598
+    },
+    {
+      "account_number": "4000000135",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000134",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 2073.61,
+      "account_age_days": 1699
+    },
+    {
+      "account_number": "4000000136",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000135",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 10686.47,
+      "account_age_days": 877
+    },
+    {
+      "account_number": "4000000137",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000136",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22668.54,
+      "account_age_days": 2422
+    },
+    {
+      "account_number": "4000000138",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000137",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 12186.0,
+      "account_age_days": 1470
+    },
+    {
+      "account_number": "4000000139",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000138",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 21409.47,
+      "account_age_days": 3453
+    },
+    {
+      "account_number": "4000000140",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000139",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 12461.62,
+      "account_age_days": 1147
+    },
+    {
+      "account_number": "4000000141",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000140",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 1211.11,
+      "account_age_days": 1406
+    },
+    {
+      "account_number": "4000000142",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000141",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 21092.39,
+      "account_age_days": 552
+    },
+    {
+      "account_number": "4000000143",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000142",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 22719.76,
+      "account_age_days": 2454
+    },
+    {
+      "account_number": "4000000144",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000143",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 2556.71,
+      "account_age_days": 1785
+    },
+    {
+      "account_number": "4000000145",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000144",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 4952.36,
+      "account_age_days": 1095
+    },
+    {
+      "account_number": "4000000146",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000145",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 5685.68,
+      "account_age_days": 1368
+    },
+    {
+      "account_number": "4000000147",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000146",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 7317.29,
+      "account_age_days": 3437
+    },
+    {
+      "account_number": "4000000148",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000147",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 20955.32,
+      "account_age_days": 1956
+    },
+    {
+      "account_number": "4000000149",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000148",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 24997.74,
+      "account_age_days": 1463
+    },
+    {
+      "account_number": "4000000150",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000149",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 19640.21,
+      "account_age_days": 2699
+    },
+    {
+      "account_number": "4000000151",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000150",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23765.49,
+      "account_age_days": 846
+    },
+    {
+      "account_number": "4000000152",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000151",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 6344.35,
+      "account_age_days": 1969
+    },
+    {
+      "account_number": "4000000153",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000152",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 11893.33,
+      "account_age_days": 1079
+    },
+    {
+      "account_number": "4000000154",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000153",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 15344.37,
+      "account_age_days": 3093
+    },
+    {
+      "account_number": "4000000155",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000154",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 24135.66,
+      "account_age_days": 472
+    },
+    {
+      "account_number": "4000000156",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000155",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23257.74,
+      "account_age_days": 2388
+    },
+    {
+      "account_number": "4000000157",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000156",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23566.03,
+      "account_age_days": 842
+    },
+    {
+      "account_number": "4000000158",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000157",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 2996.58,
+      "account_age_days": 3194
+    },
+    {
+      "account_number": "4000000159",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000158",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 20007.57,
+      "account_age_days": 2348
+    },
+    {
+      "account_number": "4000000160",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000159",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 13552.26,
+      "account_age_days": 2739
+    },
+    {
+      "account_number": "4000000161",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000160",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 12896.04,
+      "account_age_days": 1427
+    },
+    {
+      "account_number": "4000000162",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000161",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 20647.11,
+      "account_age_days": 462
+    },
+    {
+      "account_number": "4000000163",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000162",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 16071.84,
+      "account_age_days": 3424
+    },
+    {
+      "account_number": "4000000164",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000163",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 11169.44,
+      "account_age_days": 3035
+    },
+    {
+      "account_number": "4000000165",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000164",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 15589.85,
+      "account_age_days": 2234
+    },
+    {
+      "account_number": "4000000166",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000165",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 11171.58,
+      "account_age_days": 3024
+    },
+    {
+      "account_number": "4000000167",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000166",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 8396.46,
+      "account_age_days": 1035
+    },
+    {
+      "account_number": "4000000168",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000167",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 22099.96,
+      "account_age_days": 1028
+    },
+    {
+      "account_number": "4000000169",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000168",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 8741.72,
+      "account_age_days": 2054
+    },
+    {
+      "account_number": "4000000170",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000169",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 12444.97,
+      "account_age_days": 1483
+    },
+    {
+      "account_number": "4000000171",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000170",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 7351.63,
+      "account_age_days": 2471
+    },
+    {
+      "account_number": "4000000172",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000171",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 13157.37,
+      "account_age_days": 812
+    },
+    {
+      "account_number": "4000000173",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000172",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 18141.83,
+      "account_age_days": 2031
+    },
+    {
+      "account_number": "4000000174",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000173",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 17419.93,
+      "account_age_days": 2675
+    },
+    {
+      "account_number": "4000000175",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000174",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 19926.86,
+      "account_age_days": 411
+    },
+    {
+      "account_number": "4000000176",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000175",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 10407.83,
+      "account_age_days": 1026
+    },
+    {
+      "account_number": "4000000177",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000176",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 12094.88,
+      "account_age_days": 2204
+    },
+    {
+      "account_number": "4000000178",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000177",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 24917.47,
+      "account_age_days": 2284
+    },
+    {
+      "account_number": "4000000179",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000178",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 17719.95,
+      "account_age_days": 1139
+    },
+    {
+      "account_number": "4000000180",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000179",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 6148.18,
+      "account_age_days": 2984
+    },
+    {
+      "account_number": "4000000181",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000180",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 3429.09,
+      "account_age_days": 2224
+    },
+    {
+      "account_number": "4000000182",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000181",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 5801.42,
+      "account_age_days": 2013
+    },
+    {
+      "account_number": "4000000183",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000182",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 24522.51,
+      "account_age_days": 3440
+    },
+    {
+      "account_number": "4000000184",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000183",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 6073.34,
+      "account_age_days": 764
+    },
+    {
+      "account_number": "4000000185",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000184",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 17846.45,
+      "account_age_days": 548
+    },
+    {
+      "account_number": "4000000186",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000185",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 24370.23,
+      "account_age_days": 2296
+    },
+    {
+      "account_number": "4000000187",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000186",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 16127.81,
+      "account_age_days": 3113
+    },
+    {
+      "account_number": "4000000188",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000187",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 21881.63,
+      "account_age_days": 2381
+    },
+    {
+      "account_number": "4000000189",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000188",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 12228.5,
+      "account_age_days": 1425
+    },
+    {
+      "account_number": "4000000190",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000189",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 6685.72,
+      "account_age_days": 3559
+    },
+    {
+      "account_number": "4000000191",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000190",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 20641.83,
+      "account_age_days": 1671
+    },
+    {
+      "account_number": "4000000192",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000191",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 14637.02,
+      "account_age_days": 2841
+    },
+    {
+      "account_number": "4000000193",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000192",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 4155.34,
+      "account_age_days": 2335
+    },
+    {
+      "account_number": "4000000194",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000193",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 24850.99,
+      "account_age_days": 515
+    },
+    {
+      "account_number": "4000000195",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000194",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 15354.78,
+      "account_age_days": 3268
+    },
+    {
+      "account_number": "4000000196",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000195",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 11537.6,
+      "account_age_days": 1843
+    },
+    {
+      "account_number": "4000000197",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000196",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 7981.82,
+      "account_age_days": 2573
+    },
+    {
+      "account_number": "4000000198",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000197",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23715.96,
+      "account_age_days": 881
+    },
+    {
+      "account_number": "4000000199",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000198",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 16680.49,
+      "account_age_days": 673
+    },
+    {
+      "account_number": "4000000200",
+      "routing_number": "071000026",
+      "branch_id": "loc2",
+      "customer_id": "CUST-10000199",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 14023.81,
+      "account_age_days": 671
+    },
+    {
+      "account_number": "4000000201",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000200",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 11537.34,
+      "account_age_days": 2462
+    },
+    {
+      "account_number": "4000000202",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000201",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 1299.68,
+      "account_age_days": 1210
+    },
+    {
+      "account_number": "4000000203",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000202",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 2243.9,
+      "account_age_days": 986
+    },
+    {
+      "account_number": "4000000204",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000203",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 10915.9,
+      "account_age_days": 2260
+    },
+    {
+      "account_number": "4000000205",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000204",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 22756.08,
+      "account_age_days": 3415
+    },
+    {
+      "account_number": "4000000206",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000205",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 1961.13,
+      "account_age_days": 3276
+    },
+    {
+      "account_number": "4000000207",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000206",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 11259.26,
+      "account_age_days": 1949
+    },
+    {
+      "account_number": "4000000208",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000207",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23595.57,
+      "account_age_days": 2079
+    },
+    {
+      "account_number": "4000000209",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000208",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 11225.09,
+      "account_age_days": 2479
+    },
+    {
+      "account_number": "4000000210",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000209",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 18496.08,
+      "account_age_days": 2502
+    },
+    {
+      "account_number": "4000000211",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000210",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 2737.51,
+      "account_age_days": 2791
+    },
+    {
+      "account_number": "4000000212",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000211",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 24989.52,
+      "account_age_days": 2783
+    },
+    {
+      "account_number": "4000000213",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000212",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 19196.17,
+      "account_age_days": 747
+    },
+    {
+      "account_number": "4000000214",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000213",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22943.78,
+      "account_age_days": 773
+    },
+    {
+      "account_number": "4000000215",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000214",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 16052.23,
+      "account_age_days": 2044
+    },
+    {
+      "account_number": "4000000216",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000215",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 9025.05,
+      "account_age_days": 1395
+    },
+    {
+      "account_number": "4000000217",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000216",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 21514.46,
+      "account_age_days": 1380
+    },
+    {
+      "account_number": "4000000218",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000217",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 7561.34,
+      "account_age_days": 1670
+    },
+    {
+      "account_number": "4000000219",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000218",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 11643.23,
+      "account_age_days": 1318
+    },
+    {
+      "account_number": "4000000220",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000219",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 3340.08,
+      "account_age_days": 3194
+    },
+    {
+      "account_number": "4000000221",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000220",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 16612.68,
+      "account_age_days": 2252
+    },
+    {
+      "account_number": "4000000222",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000221",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 1828.0,
+      "account_age_days": 2153
+    },
+    {
+      "account_number": "4000000223",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000222",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 15822.51,
+      "account_age_days": 3142
+    },
+    {
+      "account_number": "4000000224",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000223",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 7042.88,
+      "account_age_days": 566
+    },
+    {
+      "account_number": "4000000225",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000224",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22080.74,
+      "account_age_days": 2015
+    },
+    {
+      "account_number": "4000000226",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000225",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 24342.1,
+      "account_age_days": 2523
+    },
+    {
+      "account_number": "4000000227",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000226",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 8113.38,
+      "account_age_days": 86
+    },
+    {
+      "account_number": "4000000228",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000227",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 2783.63,
+      "account_age_days": 3476
+    },
+    {
+      "account_number": "4000000229",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000228",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23702.99,
+      "account_age_days": 2683
+    },
+    {
+      "account_number": "4000000230",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000229",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23350.0,
+      "account_age_days": 1225
+    },
+    {
+      "account_number": "4000000231",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000230",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 10679.51,
+      "account_age_days": 2006
+    },
+    {
+      "account_number": "4000000232",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000231",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 11691.27,
+      "account_age_days": 622
+    },
+    {
+      "account_number": "4000000233",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000232",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 23085.77,
+      "account_age_days": 2111
+    },
+    {
+      "account_number": "4000000234",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000233",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 7268.06,
+      "account_age_days": 3265
+    },
+    {
+      "account_number": "4000000235",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000234",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 23389.09,
+      "account_age_days": 2109
+    },
+    {
+      "account_number": "4000000236",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000235",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 7429.56,
+      "account_age_days": 1252
+    },
+    {
+      "account_number": "4000000237",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000236",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 21698.88,
+      "account_age_days": 1859
+    },
+    {
+      "account_number": "4000000238",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000237",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 8955.54,
+      "account_age_days": 2290
+    },
+    {
+      "account_number": "4000000239",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000238",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 11655.94,
+      "account_age_days": 1348
+    },
+    {
+      "account_number": "4000000240",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000239",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 14509.04,
+      "account_age_days": 986
+    },
+    {
+      "account_number": "4000000241",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000240",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 8295.32,
+      "account_age_days": 1967
+    },
+    {
+      "account_number": "4000000242",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000241",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 24716.14,
+      "account_age_days": 3275
+    },
+    {
+      "account_number": "4000000243",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000242",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 24138.2,
+      "account_age_days": 547
+    },
+    {
+      "account_number": "4000000244",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000243",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 21807.66,
+      "account_age_days": 3610
+    },
+    {
+      "account_number": "4000000245",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000244",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 13385.8,
+      "account_age_days": 1901
+    },
+    {
+      "account_number": "4000000246",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000245",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 10544.48,
+      "account_age_days": 2711
+    },
+    {
+      "account_number": "4000000247",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000246",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 12002.52,
+      "account_age_days": 1115
+    },
+    {
+      "account_number": "4000000248",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000247",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 16421.0,
+      "account_age_days": 3518
+    },
+    {
+      "account_number": "4000000249",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000248",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23876.42,
+      "account_age_days": 2597
+    },
+    {
+      "account_number": "4000000250",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000249",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 15627.76,
+      "account_age_days": 991
+    },
+    {
+      "account_number": "4000000251",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000250",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 18795.78,
+      "account_age_days": 1807
+    },
+    {
+      "account_number": "4000000252",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000251",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 11370.12,
+      "account_age_days": 2872
+    },
+    {
+      "account_number": "4000000253",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000252",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 1626.78,
+      "account_age_days": 3291
+    },
+    {
+      "account_number": "4000000254",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000253",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 9282.35,
+      "account_age_days": 1794
+    },
+    {
+      "account_number": "4000000255",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000254",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 13513.57,
+      "account_age_days": 2348
+    },
+    {
+      "account_number": "4000000256",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000255",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 4789.2,
+      "account_age_days": 2526
+    },
+    {
+      "account_number": "4000000257",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000256",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 12692.85,
+      "account_age_days": 2418
+    },
+    {
+      "account_number": "4000000258",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000257",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 11798.17,
+      "account_age_days": 1070
+    },
+    {
+      "account_number": "4000000259",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000258",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 16837.6,
+      "account_age_days": 3325
+    },
+    {
+      "account_number": "4000000260",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000259",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 17101.47,
+      "account_age_days": 677
+    },
+    {
+      "account_number": "4000000261",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000260",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23658.27,
+      "account_age_days": 2436
+    },
+    {
+      "account_number": "4000000262",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000261",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 17412.68,
+      "account_age_days": 1901
+    },
+    {
+      "account_number": "4000000263",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000262",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 24984.65,
+      "account_age_days": 3525
+    },
+    {
+      "account_number": "4000000264",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000263",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 6311.54,
+      "account_age_days": 2372
+    },
+    {
+      "account_number": "4000000265",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000264",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 24820.96,
+      "account_age_days": 1239
+    },
+    {
+      "account_number": "4000000266",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000265",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 7224.77,
+      "account_age_days": 2348
+    },
+    {
+      "account_number": "4000000267",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000266",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 20904.55,
+      "account_age_days": 1202
+    },
+    {
+      "account_number": "4000000268",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000267",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 5865.61,
+      "account_age_days": 808
+    },
+    {
+      "account_number": "4000000269",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000268",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 15892.08,
+      "account_age_days": 2600
+    },
+    {
+      "account_number": "4000000270",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000269",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 19820.96,
+      "account_age_days": 166
+    },
+    {
+      "account_number": "4000000271",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000270",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 18442.81,
+      "account_age_days": 399
+    },
+    {
+      "account_number": "4000000272",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000271",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 18813.28,
+      "account_age_days": 749
+    },
+    {
+      "account_number": "4000000273",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000272",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 19769.56,
+      "account_age_days": 3619
+    },
+    {
+      "account_number": "4000000274",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000273",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 20846.58,
+      "account_age_days": 1082
+    },
+    {
+      "account_number": "4000000275",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000274",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 18790.7,
+      "account_age_days": 1417
+    },
+    {
+      "account_number": "4000000276",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000275",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 24090.89,
+      "account_age_days": 606
+    },
+    {
+      "account_number": "4000000277",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000276",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 24198.11,
+      "account_age_days": 3325
+    },
+    {
+      "account_number": "4000000278",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000277",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 2712.42,
+      "account_age_days": 1646
+    },
+    {
+      "account_number": "4000000279",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000278",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 13646.02,
+      "account_age_days": 1892
+    },
+    {
+      "account_number": "4000000280",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000279",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 14821.72,
+      "account_age_days": 3398
+    },
+    {
+      "account_number": "4000000281",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000280",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 17033.5,
+      "account_age_days": 1961
+    },
+    {
+      "account_number": "4000000282",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000281",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 22923.77,
+      "account_age_days": 936
+    },
+    {
+      "account_number": "4000000283",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000282",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 22780.0,
+      "account_age_days": 1267
+    },
+    {
+      "account_number": "4000000284",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000283",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 3924.54,
+      "account_age_days": 182
+    },
+    {
+      "account_number": "4000000285",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000284",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 3344.95,
+      "account_age_days": 991
+    },
+    {
+      "account_number": "4000000286",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000285",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 10021.82,
+      "account_age_days": 1549
+    },
+    {
+      "account_number": "4000000287",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000286",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 14889.84,
+      "account_age_days": 3006
+    },
+    {
+      "account_number": "4000000288",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000287",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 16545.59,
+      "account_age_days": 3444
+    },
+    {
+      "account_number": "4000000289",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000288",
+      "account_type": "BUSINESS",
+      "avg_monthly_balance": 23506.8,
+      "account_age_days": 1175
+    },
+    {
+      "account_number": "4000000290",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000289",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 5823.11,
+      "account_age_days": 1851
+    },
+    {
+      "account_number": "4000000291",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000290",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 2934.19,
+      "account_age_days": 2838
+    },
+    {
+      "account_number": "4000000292",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000291",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 1983.48,
+      "account_age_days": 1160
+    },
+    {
+      "account_number": "4000000293",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000292",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 23750.76,
+      "account_age_days": 3405
+    },
+    {
+      "account_number": "4000000294",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000293",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 16737.83,
+      "account_age_days": 2658
+    },
+    {
+      "account_number": "4000000295",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000294",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 1739.17,
+      "account_age_days": 1396
+    },
+    {
+      "account_number": "4000000296",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000295",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 19780.96,
+      "account_age_days": 870
+    },
+    {
+      "account_number": "4000000297",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000296",
+      "account_type": "SAVINGS",
+      "avg_monthly_balance": 14866.39,
+      "account_age_days": 3360
+    },
+    {
+      "account_number": "4000000298",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000297",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 19472.03,
+      "account_age_days": 3260
+    },
+    {
+      "account_number": "4000000299",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000298",
+      "account_type": "CHECKING",
+      "avg_monthly_balance": 7293.23,
+      "account_age_days": 622
+    },
+    {
+      "account_number": "4000000300",
+      "routing_number": "071000039",
+      "branch_id": "loc3",
+      "customer_id": "CUST-10000299",
+      "account_type": "MONEY_MARKET",
+      "avg_monthly_balance": 20063.59,
+      "account_age_days": 480
+    }
+  ]
+}
