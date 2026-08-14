@@ -1,0 +1,51 @@
+{
+  "feature_order": [
+    "amount_ratio_to_threshold",
+    "is_cash",
+    "hour_of_day",
+    "day_of_week",
+    "is_transfer_out"
+  ],
+  "mean": [
+    0.17486994842944198,
+    0.19831223628691982,
+    11.56375996249414,
+    3.008907641819034,
+    0.8954524144397562
+  ],
+  "std": [
+    0.2783850988385787,
+    0.3987285959469076,
+    6.850920000264501,
+    1.988107015555269,
+    0.3059695865829872
+  ],
+  "weight": [
+    4.845503807067871,
+    -3.5697555541992188,
+    -0.24625447392463684,
+    -0.36483460664749146,
+    -2.7525951862335205
+  ],
+  "bias": -9.65332317352295,
+  "threshold": 0.3,
+  "metrics": {
+    "auc": 0.9260610676452261,
+    "chosen_threshold": 0.3,
+    "recall_overall": 0.9363636363636364,
+    "recall_cash_deposits_withdrawals": 1.0,
+    "recall_layering_hops": 0.9186046511627907,
+    "precision": 0.24759615384615385,
+    "false_positive_rate": 0.2383853769992384,
+    "confusion_matrix": {
+      "true_negative": 1000,
+      "false_positive": 313,
+      "false_negative": 7,
+      "true_positive": 103
+    },
+    "n_test": 1423,
+    "n_test_fraud": 110,
+    "fl_rounds_run": 5,
+    "fl_validation_auc": 0.9922875816993464
+  }
+}
