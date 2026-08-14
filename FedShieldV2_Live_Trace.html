@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FedShieldV2 — Live Trace</title>
+</head>
+<body>
+<style>
+  :root{
+    --ink:#E7ECEE; --paper:#0B1014; --steel:#AAB8C0; --steel-soft:#2B3841;
+    --brass:#E7B24E; --brass-soft:#5B421E; --teal:#63C3B8; --teal-soft:#123430;
+    --stamp:#E2685F; --blue:#6C9BFF; --panel-bg:rgba(99,195,184,0.07); --card-bg:#161D22;
+    --text:var(--ink); --text-muted:#94A4AD; --border:var(--steel-soft);
+    --mono: ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
+    --sans: -apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --ink:#121A21; --paper:#EDF1F2; --steel:#3C4855; --steel-soft:#C7CFD6;
+      --brass:#9C6B1F; --brass-soft:#E4C48A; --teal:#2E7770; --teal-soft:#BFDDD9;
+      --stamp:#A6342E; --blue:#1D4ED8; --panel-bg:rgba(46,119,112,0.06); --card-bg:#FFFFFF; --text-muted:#55636F; }
+  }
+  :root[data-theme="light"]{ --ink:#121A21; --paper:#EDF1F2; --steel:#3C4855; --steel-soft:#C7CFD6;
+    --brass:#9C6B1F; --brass-soft:#E4C48A; --teal:#2E7770; --teal-soft:#BFDDD9;
+    --stamp:#A6342E; --blue:#1D4ED8; --panel-bg:rgba(46,119,112,0.06); --card-bg:#FFFFFF; --text-muted:#55636F; }
+  :root[data-theme="dark"]{ --ink:#E7ECEE; --paper:#0B1014; --steel:#AAB8C0; --steel-soft:#2B3841;
+    --brass:#E7B24E; --brass-soft:#5B421E; --teal:#63C3B8; --teal-soft:#123430;
+    --stamp:#E2685F; --blue:#6C9BFF; --panel-bg:rgba(99,195,184,0.07); --card-bg:#161D22; --text-muted:#94A4AD; }
+
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--paper); color:var(--text); font-family:var(--sans); }
+  .wrap{ max-width:1560px; margin:0 auto; padding:44px 28px 60px; }
+
+  .eyebrow{ font-family:var(--mono); font-size:19px; letter-spacing:.12em; text-transform:uppercase; color:var(--teal); font-weight:700; margin:0 0 12px; }
+  h1{ font-size:clamp(24px,3vw,34px); line-height:1.14; margin:0 0 10px; white-space:nowrap; font-weight:700; letter-spacing:-.01em; }
+  .sub{ font-size:15px; color:var(--text-muted); margin:0 0 20px; white-space:nowrap; }
+
+  .badges{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px; }
+  .badge{ display:inline-flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11px; padding:5px 10px; border-radius:3px; border:1px solid var(--border); background:var(--card-bg); color:var(--text-muted); }
+  .badge .dot{ width:6px; height:6px; border-radius:50%; flex:none; }
+  .badge.live .dot{ background:var(--teal); }
+  .badge.wip .dot{ background:var(--brass); }
+
+  .deck{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; background:var(--card-bg); border:1px solid var(--border); border-radius:8px; padding:14px 18px; }
+  .btnrow{ display:flex; gap:6px; flex:none; }
+  button.ctl{ font-family:var(--mono); font-size:12px; letter-spacing:.02em; cursor:pointer; border:1px solid var(--border); background:var(--paper); color:var(--text); border-radius:5px; padding:8px 12px; line-height:1; transition:background .15s ease; }
+  button.ctl:hover{ background:var(--panel-bg); }
+  button.ctl:focus-visible{ outline:2px solid var(--teal); outline-offset:1px; }
+  button.ctl.primary{ background:var(--brass); color:#1C1200; border-color:var(--brass); font-weight:700; }
+  .dots{ display:flex; gap:6px; flex:none; }
+  .stepdot{ width:9px; height:9px; border-radius:50%; background:var(--border); border:none; cursor:pointer; padding:0; }
+  .stepdot.on{ background:var(--brass); }
+  .caption{ font-size:15.5px; line-height:1.4; color:var(--text); flex:1 1 320px; min-width:240px; min-height:1.4em; }
+  .caption b{ color:var(--brass); }
+  .motionbtn{ margin-left:auto; flex:none; }
+
+  .diagram-frame{ background:var(--card-bg); border:1px solid var(--border); border-top:none; border-radius:0 0 8px 8px; padding:14px 18px 22px; overflow-x:auto; }
+  .diagram-frame svg{ display:block; width:100%; height:auto; }
+
+  .node{ cursor:pointer; }
+  .node .halo{ opacity:0; transition:opacity .2s ease; }
+  .node:hover .halo, .node:focus-visible .halo{ opacity:.55; }
+  .node:focus-visible{ outline:none; }
+  .node.is-active .halo{ opacity:1; }
+  .edge-live, .packet, .n-brass, .n-teal, .n-ink, .n-stamp{ transition: opacity .35s ease, filter .35s ease; }
+  .is-dim{ opacity:.22; filter:grayscale(75%); }
+  .is-active{ opacity:1; filter:none; }
+  @media (prefers-reduced-motion:reduce){ .is-dim, .is-active{ transition:none; } }
+
+  .n-brass{ color:var(--brass); }
+  .n-teal{ color:var(--teal); }
+  .n-ink{ color:var(--steel); }
+  .n-stamp{ color:var(--stamp); }
+  .n-muted{ color:var(--steel-soft); }
+
+  .card{ fill:var(--paper); }
+  .card-title{ font-family:var(--mono); font-size:14.5px; font-weight:700; fill:var(--text); }
+  .card-sub{ font-family:var(--mono); font-size:11.5px; fill:var(--text-muted); }
+  .pill-text{ font-family:var(--mono); font-size:11px; font-weight:700; letter-spacing:.04em; fill:#1C1200; text-anchor:middle; }
+  .tag-text{ font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+  .lbl-node{ font-family:var(--mono); font-size:11px; fill:var(--text-muted); text-anchor:middle; }
+
+  .panel-bg{ fill:var(--panel-bg); stroke:var(--border); stroke-width:1.2; }
+  .planned-bg{ fill:none; stroke:var(--steel-soft); stroke-width:1.2; stroke-dasharray:5 4; }
+  .edge-live, .edge-static{ fill:none; }
+  .edge-static{ stroke:var(--steel-soft); stroke-width:1.7; stroke-dasharray:3 4; }
+  .stamp-ring{ fill:none; stroke:var(--stamp); stroke-width:3; }
+
+  .legend{ margin-top:18px; padding-top:16px; border-top:1px solid var(--border); display:flex; flex-wrap:wrap; gap:16px 26px; align-items:center; }
+  .legend-item{ display:flex; align-items:center; gap:7px; font-size:12px; color:var(--text-muted); }
+  .legend-item svg{ flex:none; }
+  .legend-note{ font-size:12px; color:var(--text-muted); font-style:italic; margin-left:auto; }
+
+  footer{ margin-top:26px; font-family:var(--mono); font-size:11px; color:var(--text-muted); }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">FED-SHIELD</p>
+  <h1>Federated Fraud Intelligence Platform</h1>
+  <p class="sub">Three branches, one shared graph, five autonomous agents.</p>
+  <div class="badges">
+    <span class="badge wip"><span class="dot"></span>Report + review — in progress</span>
+  </div>
+
+  <div class="deck">
+    <div class="btnrow">
+      <button class="ctl" id="btnReset" title="Back to start">⟲</button>
+      <button class="ctl" id="btnPrev" title="Previous step">◀</button>
+      <button class="ctl primary" id="btnPlay" title="Play / pause">▶ Play</button>
+      <button class="ctl" id="btnNext" title="Next step">▶</button>
+    </div>
+    <div class="dots" id="dots"></div>
+    <p class="caption" id="caption">Click <b>▶ Play</b>, or any card below, to follow one deposit through the system.</p>
+    <button class="ctl motionbtn" id="btnMotion" title="Toggle ambient motion">Motion: on</button>
+  </div>
+
+  <div class="diagram-frame">
+    <svg id="stage" viewBox="-170 0 1610 1550" width="1610" height="1550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive live trace of FedShieldV2's fraud pipeline">
+      <defs>
+        <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--brass)"/></marker>
+        <marker id="arrT" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--teal)"/></marker>
+        <marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--steel-soft)"/></marker>
+        <marker id="arrBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--blue)"/></marker>
+
+        <symbol id="ic-cash" viewBox="0 0 100 100"><rect x="14" y="30" width="72" height="40" rx="9" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="50" cy="50" r="12" fill="none" stroke="currentColor" stroke-width="7"/></symbol>
+        <symbol id="ic-mask" viewBox="0 0 100 100"><polygon points="50,8 90,34 90,66 50,92 10,66 10,34" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/><circle cx="50" cy="50" r="8" fill="currentColor"/></symbol>
+        <symbol id="ic-score" viewBox="0 0 100 100"><path d="M14,72 A36,36 0 0 1 86,72" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><line x1="50" y1="72" x2="73" y2="42" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><circle cx="50" cy="72" r="5.5" fill="currentColor"/></symbol>
+        <symbol id="ic-db" viewBox="0 0 100 100"><ellipse cx="50" cy="24" rx="36" ry="14" fill="none" stroke="currentColor" stroke-width="7"/><path d="M14,24 L14,76 A36,14 0 0 0 86,76 L86,24" fill="none" stroke="currentColor" stroke-width="7"/><path d="M14,50 A36,14 0 0 0 86,50" fill="none" stroke="currentColor" stroke-width="6" opacity=".55"/></symbol>
+        <symbol id="ic-agent" viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" rx="13" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="50" cy="50" r="10" fill="currentColor"/><line x1="50" y1="6" x2="50" y2="20" stroke="currentColor" stroke-width="6"/><line x1="50" y1="80" x2="50" y2="94" stroke="currentColor" stroke-width="6"/><line x1="6" y1="50" x2="20" y2="50" stroke="currentColor" stroke-width="6"/><line x1="80" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="6"/></symbol>
+        <symbol id="ic-tag" viewBox="0 0 100 100"><path d="M12,50 L46,14 H80 A8,8 0 0 1 88,22 V56 L50,90 Z" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/><circle cx="67" cy="34" r="7" fill="currentColor"/></symbol>
+        <symbol id="ic-loop" viewBox="0 0 100 100"><path d="M27,32 A32,32 0 1 1 22,58" fill="none" stroke="currentColor" stroke-width="7.5" stroke-linecap="round"/><polygon points="16,27 34,29 24,46" fill="currentColor"/></symbol>
+        <symbol id="ic-doc" viewBox="0 0 100 100"><rect x="22" y="8" width="56" height="84" rx="5" fill="none" stroke="currentColor" stroke-width="6"/><line x1="34" y1="30" x2="66" y2="30" stroke="currentColor" stroke-width="6"/><line x1="34" y1="48" x2="66" y2="48" stroke="currentColor" stroke-width="6"/><line x1="34" y1="66" x2="58" y2="66" stroke="currentColor" stroke-width="6"/></symbol>
+        <symbol id="ic-person" viewBox="0 0 100 100"><circle cx="50" cy="30" r="17" fill="none" stroke="currentColor" stroke-width="7"/><path d="M18,90 A32,32 0 0 1 82,90" fill="none" stroke="currentColor" stroke-width="7"/></symbol>
+        <symbol id="ic-check" viewBox="0 0 100 100"><path d="M18,52 L42,76 L84,26" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="ic-chart" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M10,88h80"/><rect x="20" y="58" width="14" height="26" stroke-width="6"/><rect x="43" y="42" width="14" height="42" stroke-width="6"/><rect x="66" y="26" width="14" height="58" stroke-width="6"/></g></symbol>
+        <symbol id="ic-gear" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"><circle cx="50" cy="50" r="22"/><line x1="50" y1="8" x2="50" y2="20"/><line x1="50" y1="80" x2="50" y2="92"/><line x1="8" y1="50" x2="20" y2="50"/><line x1="80" y1="50" x2="92" y2="50"/><line x1="21" y1="21" x2="29" y2="29"/><line x1="71" y1="71" x2="79" y2="79"/><line x1="79" y1="21" x2="71" y2="29"/><line x1="21" y1="79" x2="29" y2="71"/></g><circle cx="50" cy="50" r="8" fill="currentColor"/></symbol>
+      </defs>
+      <!-- ================= DATA GENERATION (added on top; everything below is shifted +150) ================= -->
+      <g class="node" tabindex="0"><title>Faker-driven producer &mdash; generates customers, accounts &amp; background traffic, then injects fraud rings on top</title>
+        <rect class="halo" x="108" y="8" width="1044" height="108" rx="14" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <rect x="110" y="10" width="1040" height="104" rx="12" fill="var(--card-bg)" stroke="var(--blue)" stroke-width="2"/>
+        <circle cx="170" cy="62" r="27" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <use href="#ic-chart" x="148" y="40" width="44" height="44" style="color:var(--blue)"/>
+        <circle cx="196" cy="84" r="15" fill="var(--blue)"/>
+        <use href="#ic-person" x="187" y="75" width="18" height="18" style="color:var(--card-bg)"/>
+        <circle cx="1090" cy="62" r="27" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <use href="#ic-db" x="1068" y="40" width="44" height="44" style="color:var(--blue)"/>
+        <circle cx="1064" cy="84" r="15" fill="var(--blue)"/>
+        <use href="#ic-gear" x="1055" y="75" width="18" height="18" style="color:var(--card-bg)"/>
+        <text x="630" y="52" text-anchor="middle" style="font-family:var(--sans);font-size:21px;font-weight:800;fill:var(--blue);">Data Set Generation using Faker</text>
+        <text x="630" y="76" text-anchor="middle" style="font-family:var(--sans);font-size:13.5px;fill:var(--text);">Generating customers, transactions, and injecting fake transactions</text>
+        <text x="630" y="94" text-anchor="middle" style="font-family:var(--sans);font-size:13.5px;fill:var(--text);">via a single producer, using the Faker module.</text>
+      </g>
+      <path d="M300,114 Q250,142 200,166" fill="none" stroke="var(--blue)" stroke-width="2.4" marker-end="url(#arrBlue)"/>
+      <path d="M630,114 L630,166" fill="none" stroke="var(--blue)" stroke-width="2.4" marker-end="url(#arrBlue)"/>
+      <path d="M960,114 Q1010,142 1060,166" fill="none" stroke="var(--blue)" stroke-width="2.4" marker-end="url(#arrBlue)"/>
+
+      <g transform="translate(0,150)">
+      <!-- reusable card template drawn per-node: rect + icon ring + icon + title + subtitle -->
+
+      <!-- ================= BRANCHES ================= -->
+      <g id="branches">
+        <!-- loc1 (x=200) -->
+        <g class="node n-brass" data-steps="1" tabindex="0"><title>Branch loc1 — isolated core banking system, RTN 000-111-222</title>
+          <rect x="150" y="16" width="100" height="30" rx="5" fill="var(--brass)"/><text x="200" y="36" class="pill-text">loc1</text>
+        </g>
+        <g class="node n-brass" data-steps="1" tabindex="0"><title>CASH_DEPOSIT — $8,000–$9,800, just under the $10k CTR line</title>
+          <rect class="halo" x="88" y="88" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="90" y="90" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="126" cy="132" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-cash" x="104" y="110" width="44" height="44"/>
+          <text x="162" y="126" class="card-title">DEPOSIT</text>
+          <text x="162" y="144" class="card-sub">$8k–$9.8k cash,</text>
+          <text x="162" y="159" class="card-sub">just under $10k</text>
+        </g>
+        <path d="M200,176 L200,208" class="edge-live n-brass" data-steps="1 2" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+        <g class="node n-brass" data-steps="2" tabindex="0"><title>mask(): SHA256(account + GLOBAL_SALT) → token_id, streamed via Kafka (txns.loc1)</title>
+          <rect class="halo" x="88" y="208" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="90" y="210" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="126" cy="252" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-mask" x="104" y="230" width="44" height="44"/>
+          <text x="162" y="246" class="card-title">MASK</text>
+          <text x="162" y="264" class="card-sub">→ anonymous</text>
+          <text x="162" y="279" class="card-sub">token_id</text>
+        </g>
+        <path d="M200,296 L200,328" class="edge-live n-brass" data-steps="2" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+        <g class="node n-brass" data-steps="2" tabindex="0"><title>PyTorch logistic-regression scorer — catches real hops, and ~30% of ordinary transfers too</title>
+          <rect class="halo" x="88" y="328" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="90" y="330" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="126" cy="372" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-score" x="104" y="350" width="44" height="44"/>
+          <text x="162" y="366" class="card-title">SCORE</text>
+          <text x="162" y="384" class="card-sub">flags real hops —</text>
+          <text x="162" y="399" class="card-sub">and ~30% noise</text>
+        </g>
+
+        <!-- loc2 (x=630) -->
+        <g class="node n-brass" data-steps="1" tabindex="0"><title>Branch loc2 — isolated core banking system, RTN 000-333-444</title>
+          <rect x="580" y="16" width="100" height="30" rx="5" fill="var(--brass)"/><text x="630" y="36" class="pill-text">loc2</text>
+        </g>
+        <g class="node n-brass" data-steps="1" tabindex="0"><title>CASH_DEPOSIT — $8,000–$9,800, just under the $10k CTR line</title>
+          <rect class="halo" x="518" y="88" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="520" y="90" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="556" cy="132" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-cash" x="534" y="110" width="44" height="44"/>
+          <text x="592" y="126" class="card-title">DEPOSIT</text>
+          <text x="592" y="144" class="card-sub">$8k–$9.8k cash,</text>
+          <text x="592" y="159" class="card-sub">just under $10k</text>
+        </g>
+        <path d="M630,176 L630,208" class="edge-live n-brass" data-steps="1 2" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+        <g class="node n-brass" data-steps="2" tabindex="0"><title>mask(): SHA256(account + GLOBAL_SALT) → token_id, streamed via Kafka (txns.loc2)</title>
+          <rect class="halo" x="518" y="208" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="520" y="210" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="556" cy="252" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-mask" x="534" y="230" width="44" height="44"/>
+          <text x="592" y="246" class="card-title">MASK</text>
+          <text x="592" y="264" class="card-sub">→ anonymous</text>
+          <text x="592" y="279" class="card-sub">token_id</text>
+        </g>
+        <path d="M630,296 L630,328" class="edge-live n-brass" data-steps="2" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+        <g class="node n-brass" data-steps="2" tabindex="0"><title>PyTorch logistic-regression scorer — catches real hops, and ~30% of ordinary transfers too</title>
+          <rect class="halo" x="518" y="328" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="520" y="330" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="556" cy="372" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-score" x="534" y="350" width="44" height="44"/>
+          <text x="592" y="366" class="card-title">SCORE</text>
+          <text x="592" y="384" class="card-sub">flags real hops —</text>
+          <text x="592" y="399" class="card-sub">and ~30% noise</text>
+        </g>
+
+        <!-- loc3 (x=1060) -->
+        <g class="node n-brass" data-steps="1" tabindex="0"><title>Branch loc3 — isolated core banking system, RTN 000-555-666</title>
+          <rect x="1010" y="16" width="100" height="30" rx="5" fill="var(--brass)"/><text x="1060" y="36" class="pill-text">loc3</text>
+        </g>
+        <g class="node n-brass" data-steps="1" tabindex="0"><title>CASH_DEPOSIT — $8,000–$9,800, just under the $10k CTR line</title>
+          <rect class="halo" x="948" y="88" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="950" y="90" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="986" cy="132" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-cash" x="964" y="110" width="44" height="44"/>
+          <text x="1022" y="126" class="card-title">DEPOSIT</text>
+          <text x="1022" y="144" class="card-sub">$8k–$9.8k cash,</text>
+          <text x="1022" y="159" class="card-sub">just under $10k</text>
+        </g>
+        <path d="M1060,176 L1060,208" class="edge-live n-brass" data-steps="1 2" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+        <g class="node n-brass" data-steps="2" tabindex="0"><title>mask(): SHA256(account + GLOBAL_SALT) → token_id, streamed via Kafka (txns.loc3)</title>
+          <rect class="halo" x="948" y="208" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="950" y="210" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="986" cy="252" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-mask" x="964" y="230" width="44" height="44"/>
+          <text x="1022" y="246" class="card-title">MASK</text>
+          <text x="1022" y="264" class="card-sub">→ anonymous</text>
+          <text x="1022" y="279" class="card-sub">token_id</text>
+        </g>
+        <path d="M1060,296 L1060,328" class="edge-live n-brass" data-steps="2" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+        <g class="node n-brass" data-steps="2" tabindex="0"><title>PyTorch logistic-regression scorer — catches real hops, and ~30% of ordinary transfers too</title>
+          <rect class="halo" x="948" y="328" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="950" y="330" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="986" cy="372" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <use href="#ic-score" x="964" y="350" width="44" height="44"/>
+          <text x="1022" y="366" class="card-title">SCORE</text>
+          <text x="1022" y="384" class="card-sub">flags real hops —</text>
+          <text x="1022" y="399" class="card-sub">and ~30% noise</text>
+        </g>
+      </g>
+
+      <!-- funnel into shared layer -->
+      <path id="f1" d="M200,414 Q212,450 200,470" class="edge-live n-brass" data-steps="2 3" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+      <path id="f2" d="M630,414 L630,470" class="edge-live n-brass" data-steps="2 3" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+      <path id="f3" d="M1060,414 Q1048,450 1060,470" class="edge-live n-brass" data-steps="2 3" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+      <circle r="4" class="packet n-brass" data-steps="2 3" fill="var(--brass)"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0s"><mpath href="#f1"/></animateMotion></circle>
+      <circle r="4" class="packet n-brass" data-steps="2 3" fill="var(--brass)"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0.5s"><mpath href="#f2"/></animateMotion></circle>
+      <circle r="4" class="packet n-brass" data-steps="2 3" fill="var(--brass)"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1s"><mpath href="#f3"/></animateMotion></circle>
+
+      <!-- ================= SHARED LAYER ================= -->
+      <rect x="20" y="452" width="1360" height="356" rx="10" class="panel-bg"/>
+      <rect x="1245" y="470" width="110" height="24" rx="3" fill="none" stroke="var(--teal)" stroke-width="1.2"/>
+      <text x="1300" y="486" class="tag-text" style="fill:var(--teal);text-anchor:middle;">shared</text>
+
+      <g class="node n-teal" data-steps="3" tabindex="0"><title>Redis — fraud_events pub/sub fires the instant a deposit is flagged. This is the trigger, not a poll.</title>
+        <rect class="halo" x="28" y="626" width="224" height="88" rx="12" fill="none" stroke="var(--teal)" stroke-width="2"/>
+        <rect x="30" y="628" width="220" height="84" rx="10" class="card" stroke="var(--teal)" stroke-width="2"/>
+        <circle cx="66" cy="670" r="27" fill="none" stroke="var(--teal)" stroke-width="2"/>
+        <use href="#ic-db" x="44" y="648" width="44" height="44"/>
+        <text x="102" y="664" class="card-title">REDIS</text>
+        <text x="102" y="682" class="card-sub">pub/sub trigger,</text>
+        <text x="102" y="697" class="card-sub">not a poll</text>
+      </g>
+
+      <!-- graph sources -->
+      <g class="node n-brass" data-steps="3" tabindex="0"><title>Flagged deposit enters the shared graph as token_id</title><circle class="halo" cx="200" cy="472" r="24" fill="none" stroke="var(--brass)" stroke-width="2"/><circle cx="200" cy="472" r="14" fill="var(--brass)"/></g>
+      <g class="node n-brass" data-steps="3" tabindex="0"><title>Flagged deposit enters the shared graph as token_id</title><circle class="halo" cx="630" cy="472" r="24" fill="none" stroke="var(--brass)" stroke-width="2"/><circle cx="630" cy="472" r="14" fill="var(--brass)"/></g>
+      <g class="node n-brass" data-steps="3" tabindex="0"><title>Flagged deposit enters the shared graph as token_id</title><circle class="halo" cx="1060" cy="472" r="24" fill="none" stroke="var(--brass)" stroke-width="2"/><circle cx="1060" cy="472" r="14" fill="var(--brass)"/></g>
+
+      <!-- dead ends (static, no packets — a lead that never converges) -->
+      <path d="M195,492 L148,580" class="edge-static n-muted" data-steps="3"/>
+      <path d="M635,492 L755,580" class="edge-static n-muted" data-steps="3"/>
+      <path d="M1065,492 L1148,580" class="edge-static n-muted" data-steps="3"/>
+      <g class="node n-muted" data-steps="3" tabindex="0"><title>A flagged lead that never converges — cleared automatically, no human involved</title><circle cx="145" cy="590" r="9" fill="var(--card-bg)" stroke="var(--steel-soft)" stroke-width="2"/></g>
+      <g class="node n-muted" data-steps="3" tabindex="0"><title>A flagged lead that never converges — cleared automatically, no human involved</title><circle cx="760" cy="590" r="9" fill="var(--card-bg)" stroke="var(--steel-soft)" stroke-width="2"/></g>
+      <g class="node n-muted" data-steps="3" tabindex="0"><title>A flagged lead that never converges — cleared automatically, no human involved</title><circle cx="1155" cy="590" r="9" fill="var(--card-bg)" stroke="var(--steel-soft)" stroke-width="2"/></g>
+
+      <!-- real hops (live, converging) -->
+      <path id="h1" d="M210,485 L415,558" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <path id="h2" d="M630,486 L630,555" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <path id="h3" d="M1050,485 L845,558" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.8s" repeatCount="indefinite" begin="0s"><mpath href="#h1"/></animateMotion></circle>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.8s" repeatCount="indefinite" begin="0.4s"><mpath href="#h2"/></animateMotion></circle>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.8s" repeatCount="indefinite" begin="0.8s"><mpath href="#h3"/></animateMotion></circle>
+      <g class="node n-teal" data-steps="3" tabindex="0"><title>A real layering hop — time and amount verified against the previous transfer</title><circle cx="420" cy="565" r="11" fill="var(--teal)"/></g>
+      <g class="node n-teal" data-steps="3" tabindex="0"><title>A real layering hop — time and amount verified against the previous transfer</title><circle cx="630" cy="565" r="11" fill="var(--teal)"/></g>
+      <g class="node n-teal" data-steps="3" tabindex="0"><title>A real layering hop — time and amount verified against the previous transfer</title><circle cx="840" cy="565" r="11" fill="var(--teal)"/></g>
+
+      <path id="c1" d="M420,576 L613,650" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <path id="c2" d="M630,576 L630,644" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <path id="c3" d="M840,576 L647,650" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0.2s"><mpath href="#c1"/></animateMotion></circle>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0.6s"><mpath href="#c2"/></animateMotion></circle>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.6s" repeatCount="indefinite" begin="1.0s"><mpath href="#c3"/></animateMotion></circle>
+
+      <g class="node n-teal" data-steps="3" tabindex="0"><title>All three sources converge here — check_convergence() confirms it: 3 sources, 2+ branches, 96% of value preserved</title>
+        <circle class="halo" cx="630" cy="668" r="30" fill="none" stroke="var(--teal)" stroke-width="2"/>
+        <circle cx="630" cy="668" r="17" fill="var(--teal)"/>
+      </g>
+      <g class="n-teal"><circle cx="672" cy="644" r="15" fill="var(--teal)"/><use href="#ic-check" x="663" y="635" width="18" height="18" style="color:var(--card-bg)"/></g>
+
+      <path id="csink" d="M630,685 L630,732" class="edge-live n-teal" data-steps="3" stroke="var(--teal)" stroke-width="2.4" marker-end="url(#arrT)"/>
+      <circle r="4.5" class="packet n-teal" data-steps="3" fill="var(--teal)"><animateMotion dur="1.2s" repeatCount="indefinite"><mpath href="#csink"/></animateMotion></circle>
+      <g class="node n-ink" data-steps="3" tabindex="0"><title>CASH_OUT — the laundering exit, a large withdrawal</title><circle cx="630" cy="746" r="13" fill="var(--steel)"/></g>
+
+      <!-- shared layer -> agents -->
+      <path id="rtrig" d="M66,712 L66,846" class="edge-live n-brass" data-steps="3 4" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+      <circle r="4" class="packet n-brass" data-steps="3 4" fill="var(--brass)"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#rtrig"/></animateMotion></circle>
+      <path id="gquery" d="M630,764 Q580,806 520,846" class="edge-live n-brass" data-steps="3 4" stroke="var(--brass)" stroke-width="2.2" marker-end="url(#arrB)"/>
+      <circle r="4" class="packet n-brass" data-steps="3 4" fill="var(--brass)"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0.6s"><mpath href="#gquery"/></animateMotion></circle>
+
+      <!-- ================= AGENTS (row 1) ================= -->
+      <g class="node n-ink" data-steps="4" tabindex="0"><title>Structuring Agent — a quick LLM read of the score. Context only now, no longer a gate.</title>
+        <rect class="halo" x="28" y="846" width="224" height="88" rx="12" fill="none" stroke="var(--steel)" stroke-width="2"/>
+        <rect x="30" y="848" width="220" height="84" rx="10" class="card" stroke="var(--steel)" stroke-width="2"/>
+        <circle cx="66" cy="890" r="27" fill="none" stroke="var(--steel)" stroke-width="2"/>
+        <use href="#ic-agent" x="44" y="868" width="44" height="44"/>
+        <text x="102" y="884" class="card-title">STRUCTURE</text>
+        <text x="102" y="902" class="card-sub">quick AI</text>
+        <text x="102" y="917" class="card-sub">gut-check</text>
+      </g>
+      <path d="M252,890 L408,890" class="edge-static n-muted" data-steps="4" marker-end="url(#arrM)"/>
+      <g class="node n-ink" data-steps="4" tabindex="0"><title>Money-Trail Agent — check_convergence() runs in code, automatically. Evidence is never AI-typed.</title>
+        <rect class="halo" x="408" y="846" width="224" height="88" rx="12" fill="none" stroke="var(--steel)" stroke-width="2"/>
+        <rect x="410" y="848" width="220" height="84" rx="10" class="card" stroke="var(--steel)" stroke-width="2"/>
+        <circle cx="446" cy="890" r="27" fill="none" stroke="var(--steel)" stroke-width="2"/>
+        <use href="#ic-agent" x="424" y="868" width="44" height="44"/>
+        <text x="482" y="884" class="card-title">TRACE</text>
+        <text x="482" y="902" class="card-sub">traces money,</text>
+        <text x="482" y="917" class="card-sub">live</text>
+      </g>
+      <path d="M632,890 L788,890" class="edge-static n-muted" data-steps="4" marker-end="url(#arrM)"/>
+      <g class="node n-ink" data-steps="4" tabindex="0"><title>Verdict Agent — "does this prove intent?" → GUILTY, 0.9+ confidence</title>
+        <rect class="halo" x="788" y="846" width="224" height="88" rx="12" fill="none" stroke="var(--steel)" stroke-width="2"/>
+        <rect x="790" y="848" width="220" height="84" rx="10" class="card" stroke="var(--steel)" stroke-width="2"/>
+        <circle cx="826" cy="890" r="27" fill="none" stroke="var(--steel)" stroke-width="2"/>
+        <use href="#ic-agent" x="804" y="868" width="44" height="44"/>
+        <text x="862" y="884" class="card-title">VERDICT</text>
+        <text x="862" y="902" class="card-sub">GUILTY,</text>
+        <text x="862" y="917" class="card-sub">0.9+ conf.</text>
+      </g>
+
+      <path d="M1010,890 L1168,890" class="edge-static n-muted" data-steps="4 6" style="stroke:var(--text-muted);stroke-width:2px;" marker-end="url(#arrM)"/>
+      <text x="1170" y="838" class="tag-text" style="fill:var(--brass);">planned</text>
+      <g class="node n-muted" data-steps="6" tabindex="0"><title>Report Agent (planned) — generates an Excel report of the guilty fraud transactions once a verdict is confirmed</title>
+        <rect class="halo" x="1168" y="846" width="224" height="88" rx="12" fill="none" stroke="var(--steel-soft)" stroke-width="2"/>
+        <rect x="1170" y="848" width="220" height="84" rx="10" class="card" stroke="var(--steel-soft)" stroke-width="2" stroke-dasharray="5 4"/>
+        <circle cx="1206" cy="890" r="27" fill="none" stroke="var(--steel-soft)" stroke-width="2" stroke-dasharray="4 3"/>
+        <use href="#ic-doc" x="1184" y="868" width="44" height="44" style="color:var(--steel);"/>
+        <text x="1242" y="884" class="card-title">REPORT</text>
+        <text x="1242" y="902" class="card-sub">Excel report of</text>
+        <text x="1242" y="917" class="card-sub">guilty txns</text>
+      </g>
+
+      <!-- verdict fans out: confirmed badge (next line) + real label path -->
+      <path d="M840,932 Q900,970 990,1000" class="edge-static n-muted" data-steps="4"/>
+      <g class="node n-stamp" data-steps="4" tabindex="0"><title>Confirmed fraud verdict, rendered by the agent pipeline</title>
+        <circle class="halo" cx="990" cy="1080" r="92" fill="none" stroke="var(--stamp)" stroke-width="2"/>
+        <circle cx="990" cy="1080" r="80" fill="var(--card-bg)" class="stamp-ring" style="stroke-dasharray:4 3;"/>
+        <circle cx="990" cy="1080" r="72" fill="none" class="stamp-ring"/>
+        <text x="990" y="1075" text-anchor="middle" style="font-family:var(--mono);font-size:17px;font-weight:800;fill:var(--stamp);">CONFIRMED</text>
+        <text x="990" y="1096" text-anchor="middle" style="font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;fill:var(--stamp);">FRAUD</text>
+      </g>
+
+      <!-- ================= HUMAN REVIEW (row 2, beside confirmed) ================= -->
+      <g class="node n-muted" data-steps="6" tabindex="0"><title>Human Review Report (planned) — a person reviews the Report Agent's Excel report; this never gates the loop below</title>
+        <rect class="halo" x="1168" y="1036" width="224" height="88" rx="12" fill="none" stroke="var(--steel-soft)" stroke-width="2"/>
+        <rect x="1170" y="1038" width="220" height="84" rx="10" class="card" stroke="var(--steel-soft)" stroke-width="2" stroke-dasharray="5 4"/>
+        <circle cx="1206" cy="1080" r="27" fill="none" stroke="var(--steel-soft)" stroke-width="2" stroke-dasharray="4 3"/>
+        <use href="#ic-person" x="1184" y="1058" width="44" height="44" style="color:var(--steel);"/>
+        <text x="1242" y="1074" class="card-title">HUMAN REVIEW</text>
+        <text x="1242" y="1092" class="card-sub">signs off</text>
+        <text x="1242" y="1107" class="card-sub">the report</text>
+      </g>
+
+      <path id="c2r" d="M1170,905 Q1130,980 1065,1050" class="edge-static n-muted" data-steps="4 6" style="stroke:var(--text-muted);stroke-width:2px;" marker-end="url(#arrM)"/>
+      <path d="M1280,932 L1280,1038" class="edge-static n-muted" data-steps="6" marker-end="url(#arrM)"/>
+
+      <!-- verdict -> label, direct -->
+      <path id="v2l" d="M840,932 C820,1060 790,1170 750,1258" class="edge-live n-brass" data-steps="4 5" stroke="var(--brass)" stroke-width="2.4" marker-end="url(#arrB)"/>
+      <circle r="4.5" class="packet n-brass" data-steps="4 5" fill="var(--brass)"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#v2l"/></animateMotion></circle>
+
+      <!-- ================= FL LOOP + LABEL (row 3 — retrain sits left of label) ================= -->
+      <g class="node n-brass" data-steps="5" tabindex="0"><title>Flower — FedAvg blends the label into the next round, averages the weight update across loc1/loc2/loc3, and redistributes the smarter model. Only a label and a weight update ever cross a branch boundary.</title>
+        <rect class="halo" x="248" y="1256" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+        <rect x="250" y="1258" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+        <circle cx="286" cy="1300" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+        <use href="#ic-loop" x="264" y="1278" width="44" height="44"/>
+        <text x="322" y="1294" class="card-title">RETRAIN</text>
+        <text x="322" y="1312" class="card-sub">FedAvg, all</text>
+        <text x="322" y="1327" class="card-sub">branches</text>
+      </g>
+      <path id="l2f" d="M638,1300 L472,1300" class="edge-live n-brass" data-steps="5" stroke="var(--brass)" stroke-width="2.8" marker-end="url(#arrB)"/>
+      <circle r="5" class="packet n-brass" data-steps="5" fill="var(--brass)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#l2f"/></animateMotion></circle>
+      <g class="node n-brass" data-steps="5" tabindex="0"><title>Label Generator (code, not an LLM call) — writes (features, label = fraud, source = agent_verified) for every account in the confirmed group</title>
+        <rect class="halo" x="638" y="1256" width="224" height="88" rx="12" fill="none" stroke="var(--brass)" stroke-width="2"/>
+        <rect x="640" y="1258" width="220" height="84" rx="10" class="card" stroke="var(--brass)" stroke-width="2"/>
+        <circle cx="676" cy="1300" r="27" fill="none" stroke="var(--brass)" stroke-width="2"/>
+        <use href="#ic-tag" x="654" y="1278" width="44" height="44"/>
+        <text x="712" y="1294" class="card-title">LABEL</text>
+        <text x="712" y="1312" class="card-sub">writes a real</text>
+        <text x="712" y="1327" class="card-sub">training label</text>
+      </g>
+
+      <path id="loopArc" d="M248,1330 C80,1372 -138,1250 -138,650 C-138,320 -138,60 130,42" class="edge-live n-brass" data-steps="5" stroke="var(--brass)" stroke-width="2.8" marker-end="url(#arrB)"/>
+      <circle r="5.5" class="packet n-brass" data-steps="5" fill="var(--brass)"><animateMotion dur="4.8s" repeatCount="indefinite"><mpath href="#loopArc"/></animateMotion></circle>
+      </g>
+    </svg>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var STEPS = [
+    {cap: 'Click <b>▶ Play</b>, or any card below, to follow one deposit through the system.'},
+    {cap: 'Three branches. Each takes a cash deposit — <b>$8k–$9.8k</b>, just under the $10k reporting line.'},
+    {cap: 'Each branch masks it into an anonymous token and scores it — and <b>flags it</b>. So does a lot of ordinary traffic.'},
+    {cap: 'Only the <b>shared graph</b> can prove it’s the same money. False leads clear themselves; the real path converges.'},
+    {cap: 'Autonomous agents confirm it — <b>zero human input</b>. Verdict: GUILTY.'},
+    {cap: 'The verdict becomes a real <b>training label</b>. Every branch’s model gets smarter — in minutes, not months.'},
+    {cap: 'Once confirmed, the Report Agent drafts an <b>Excel report</b> of the guilty transactions — a human reviews it, but that review <b>never blocks</b> the loop above. Still in progress.'}
+  ];
+  var N = STEPS.length;
+  var current = 0;
+  var playing = false;
+  var timer = null;
+
+  var svg = document.getElementById('stage');
+  var captionEl = document.getElementById('caption');
+  var dotsEl = document.getElementById('dots');
+  var btnPlay = document.getElementById('btnPlay');
+  var btnMotion = document.getElementById('btnMotion');
+
+  for (var i = 0; i < N; i++){
+    var d = document.createElement('button');
+    d.className = 'stepdot' + (i === 0 ? ' on' : '');
+    d.setAttribute('aria-label', 'Step ' + i);
+    d.addEventListener('click', (function(idx){ return function(){ setStep(idx); stopPlay(); }; })(i));
+    dotsEl.appendChild(d);
+  }
+
+  var taggedEls = Array.prototype.slice.call(svg.querySelectorAll('[data-steps]'));
+
+  function setStep(idx){
+    current = ((idx % N) + N) % N;
+    captionEl.innerHTML = STEPS[current].cap;
+    Array.prototype.forEach.call(dotsEl.children, function(el, i){
+      el.classList.toggle('on', i === current);
+    });
+    taggedEls.forEach(function(el){
+      var steps = el.getAttribute('data-steps').split(' ').map(Number);
+      if (current === 0){
+        el.classList.remove('is-dim'); el.classList.remove('is-active');
+      } else if (steps.indexOf(current) !== -1){
+        el.classList.add('is-active'); el.classList.remove('is-dim');
+      } else {
+        el.classList.add('is-dim'); el.classList.remove('is-active');
+      }
+    });
+  }
+
+  function next(){ setStep(current + 1); }
+  function prev(){ setStep(current - 1); }
+
+  function startPlay(){
+    playing = true;
+    btnPlay.textContent = '❚❚ Pause';
+    timer = setInterval(next, 3200);
+  }
+  function stopPlay(){
+    playing = false;
+    btnPlay.textContent = '▶ Play';
+    if (timer){ clearInterval(timer); timer = null; }
+  }
+
+  document.getElementById('btnNext').addEventListener('click', function(){ next(); stopPlay(); });
+  document.getElementById('btnPrev').addEventListener('click', function(){ prev(); stopPlay(); });
+  document.getElementById('btnReset').addEventListener('click', function(){ setStep(0); stopPlay(); });
+  btnPlay.addEventListener('click', function(){ playing ? stopPlay() : startPlay(); });
+
+  taggedEls.forEach(function(el){
+    if (!el.classList.contains('node')) return;
+    el.addEventListener('click', function(){
+      var steps = el.getAttribute('data-steps').split(' ').map(Number);
+      setStep(steps[0]);
+      stopPlay();
+    });
+    el.setAttribute('role', 'button');
+  });
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var motionOn = !reduce;
+  function applyMotion(){
+    if (motionOn){ svg.unpauseAnimations && svg.unpauseAnimations(); btnMotion.textContent = 'Motion: on'; }
+    else { svg.pauseAnimations && svg.pauseAnimations(); btnMotion.textContent = 'Motion: off'; }
+  }
+  btnMotion.addEventListener('click', function(){ motionOn = !motionOn; applyMotion(); });
+  applyMotion();
+
+  setStep(0);
+})();
+</script>
+</body>
+</html>
