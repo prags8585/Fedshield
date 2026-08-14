@@ -1,0 +1,398 @@
+{
+  "scenario": "multi_ring_layering",
+  "num_rings": 3,
+  "hops_per_ring": 4,
+  "seed": 500,
+  "scenario_start": "2026-07-23T08:14:00.813Z",
+  "span_hours": 6.0,
+  "compress_seconds": 180.0,
+  "rings": {
+    "ring1": {
+      "ring_id": "ring1",
+      "consolidation_branch": "loc2",
+      "consolidation_account": "9500000001",
+      "consolidation_customer": "CUST-95000000",
+      "chains": {
+        "p1": {
+          "placement_branch": "loc1",
+          "placement_account": "9500000002",
+          "placement_customer": "CUST-95000001",
+          "placement_amount": 9328.42,
+          "intermediate_accounts": [
+            "9500000003",
+            "9500000004",
+            "9500000005"
+          ],
+          "final_amount_into_consolidation": 8994.96
+        },
+        "p2": {
+          "placement_branch": "loc2",
+          "placement_account": "9500000006",
+          "placement_customer": "CUST-95000005",
+          "placement_amount": 9164.25,
+          "intermediate_accounts": [
+            "9500000007",
+            "9500000008",
+            "9500000009"
+          ],
+          "final_amount_into_consolidation": 8672.65
+        },
+        "p3": {
+          "placement_branch": "loc3",
+          "placement_account": "9500000010",
+          "placement_customer": "CUST-95000009",
+          "placement_amount": 8131.3,
+          "intermediate_accounts": [
+            "9500000011",
+            "9500000012",
+            "9500000013"
+          ],
+          "final_amount_into_consolidation": 7721.92
+        }
+      },
+      "exit_amount": 25389.53,
+      "exit_txn_id": "tx_17238341fea543fd",
+      "fraud_accounts": [
+        "9500000001",
+        "9500000002",
+        "9500000003",
+        "9500000004",
+        "9500000005",
+        "9500000006",
+        "9500000007",
+        "9500000008",
+        "9500000009",
+        "9500000010",
+        "9500000011",
+        "9500000012",
+        "9500000013"
+      ],
+      "fraud_customers": [
+        "CUST-95000000",
+        "CUST-95000001",
+        "CUST-95000002",
+        "CUST-95000003",
+        "CUST-95000004",
+        "CUST-95000005",
+        "CUST-95000006",
+        "CUST-95000007",
+        "CUST-95000008",
+        "CUST-95000009",
+        "CUST-95000010",
+        "CUST-95000011",
+        "CUST-95000012"
+      ],
+      "fraud_txn_ids": [
+        "tx_03f721c2e9e547dc",
+        "tx_595d78faea8f4775",
+        "tx_fd5235bbd5d34d30",
+        "tx_0ec81118e8594661",
+        "tx_7f806a33d1f74e39",
+        "tx_7008341489b5435f",
+        "tx_c14bf81be96f407a",
+        "tx_5e9fc7dff3c04796",
+        "tx_824fc4026cae4bcc",
+        "tx_f996fb3ddd584d9d",
+        "tx_2780bd9c09b74c81",
+        "tx_7929e497ed5048eb",
+        "tx_85eb21c98fa94aab",
+        "tx_3bc2620fd4624f04",
+        "tx_e38de62bb3514f27",
+        "tx_17238341fea543fd"
+      ]
+    },
+    "ring2": {
+      "ring_id": "ring2",
+      "consolidation_branch": "loc1",
+      "consolidation_account": "9500000014",
+      "consolidation_customer": "CUST-95000013",
+      "chains": {
+        "p1": {
+          "placement_branch": "loc1",
+          "placement_account": "9500000015",
+          "placement_customer": "CUST-95000014",
+          "placement_amount": 8142.84,
+          "intermediate_accounts": [
+            "9500000016",
+            "9500000017",
+            "9500000018"
+          ],
+          "final_amount_into_consolidation": 7671.66
+        },
+        "p2": {
+          "placement_branch": "loc2",
+          "placement_account": "9500000019",
+          "placement_customer": "CUST-95000018",
+          "placement_amount": 9079.82,
+          "intermediate_accounts": [
+            "9500000004",
+            "9500000020",
+            "9500000021"
+          ],
+          "final_amount_into_consolidation": 8618.75
+        },
+        "p3": {
+          "placement_branch": "loc3",
+          "placement_account": "9500000022",
+          "placement_customer": "CUST-95000021",
+          "placement_amount": 9025.81,
+          "intermediate_accounts": [
+            "9500000023",
+            "9500000024",
+            "9500000025"
+          ],
+          "final_amount_into_consolidation": 8579.8
+        }
+      },
+      "exit_amount": 24870.21,
+      "exit_txn_id": "tx_a5668dfc8ac14bb9",
+      "fraud_accounts": [
+        "9500000004",
+        "9500000014",
+        "9500000015",
+        "9500000016",
+        "9500000017",
+        "9500000018",
+        "9500000019",
+        "9500000020",
+        "9500000021",
+        "9500000022",
+        "9500000023",
+        "9500000024",
+        "9500000025"
+      ],
+      "fraud_customers": [
+        "CUST-95000003",
+        "CUST-95000013",
+        "CUST-95000014",
+        "CUST-95000015",
+        "CUST-95000016",
+        "CUST-95000017",
+        "CUST-95000018",
+        "CUST-95000019",
+        "CUST-95000020",
+        "CUST-95000021",
+        "CUST-95000022",
+        "CUST-95000023",
+        "CUST-95000024"
+      ],
+      "fraud_txn_ids": [
+        "tx_10d3d3381b0848d0",
+        "tx_3ad7144e7e2c43d3",
+        "tx_f5d663ec107848a6",
+        "tx_ab63c3ef62cb4609",
+        "tx_16fc9517e2544a3d",
+        "tx_25c8771f4cd94de3",
+        "tx_b984d77f35ff4c6a",
+        "tx_eee320fc3c814898",
+        "tx_395881301c2347d2",
+        "tx_4319f5510ccb4f82",
+        "tx_b36fca719e8c4cc4",
+        "tx_cb6506172f51408e",
+        "tx_b5de0ecb58a04621",
+        "tx_06c4627d7e814945",
+        "tx_7ebde715c2a44883",
+        "tx_a5668dfc8ac14bb9"
+      ]
+    },
+    "ring3": {
+      "ring_id": "ring3",
+      "consolidation_branch": "loc1",
+      "consolidation_account": "9500000026",
+      "consolidation_customer": "CUST-95000025",
+      "chains": {
+        "p1": {
+          "placement_branch": "loc1",
+          "placement_account": "9500000027",
+          "placement_customer": "CUST-95000026",
+          "placement_amount": 8266.89,
+          "intermediate_accounts": [
+            "9500000028",
+            "9500000029",
+            "9500000030"
+          ],
+          "final_amount_into_consolidation": 7731.56
+        },
+        "p2": {
+          "placement_branch": "loc2",
+          "placement_account": "9500000031",
+          "placement_customer": "CUST-95000030",
+          "placement_amount": 9682.8,
+          "intermediate_accounts": [
+            "9500000023",
+            "9500000032",
+            "9500000033"
+          ],
+          "final_amount_into_consolidation": 9168.02
+        },
+        "p3": {
+          "placement_branch": "loc3",
+          "placement_account": "9500000034",
+          "placement_customer": "CUST-95000033",
+          "placement_amount": 9448.23,
+          "intermediate_accounts": [
+            "9500000035",
+            "9500000036",
+            "9500000037"
+          ],
+          "final_amount_into_consolidation": 8958.18
+        }
+      },
+      "exit_amount": 25857.76,
+      "exit_txn_id": "tx_c1af4a5cebca4ab1",
+      "fraud_accounts": [
+        "9500000023",
+        "9500000026",
+        "9500000027",
+        "9500000028",
+        "9500000029",
+        "9500000030",
+        "9500000031",
+        "9500000032",
+        "9500000033",
+        "9500000034",
+        "9500000035",
+        "9500000036",
+        "9500000037"
+      ],
+      "fraud_customers": [
+        "CUST-95000022",
+        "CUST-95000025",
+        "CUST-95000026",
+        "CUST-95000027",
+        "CUST-95000028",
+        "CUST-95000029",
+        "CUST-95000030",
+        "CUST-95000031",
+        "CUST-95000032",
+        "CUST-95000033",
+        "CUST-95000034",
+        "CUST-95000035",
+        "CUST-95000036"
+      ],
+      "fraud_txn_ids": [
+        "tx_ce3840d08c0b45aa",
+        "tx_2f3cfcb849664961",
+        "tx_0bacfd8d67404110",
+        "tx_ab74c35615e84644",
+        "tx_95642d1585374b37",
+        "tx_8f7e575ca14c4258",
+        "tx_e5eae93484a64681",
+        "tx_9586562a657d4c33",
+        "tx_093d6614b7c6446e",
+        "tx_8d5db1f7a08c4ff5",
+        "tx_a2d4f79dcde14f7e",
+        "tx_6ce780b227534592",
+        "tx_f03e19afd0384a8a",
+        "tx_87017e71b1fd499e",
+        "tx_1a9907afd2cd4def",
+        "tx_c1af4a5cebca4ab1"
+      ]
+    }
+  },
+  "shared_accounts": [
+    {
+      "account": "9500000004",
+      "shared_between": [
+        "ring1",
+        "ring2"
+      ]
+    },
+    {
+      "account": "9500000023",
+      "shared_between": [
+        "ring2",
+        "ring3"
+      ]
+    }
+  ],
+  "all_fraud_accounts": [
+    "9500000001",
+    "9500000002",
+    "9500000003",
+    "9500000004",
+    "9500000005",
+    "9500000006",
+    "9500000007",
+    "9500000008",
+    "9500000009",
+    "9500000010",
+    "9500000011",
+    "9500000012",
+    "9500000013",
+    "9500000014",
+    "9500000015",
+    "9500000016",
+    "9500000017",
+    "9500000018",
+    "9500000019",
+    "9500000020",
+    "9500000021",
+    "9500000022",
+    "9500000023",
+    "9500000024",
+    "9500000025",
+    "9500000026",
+    "9500000027",
+    "9500000028",
+    "9500000029",
+    "9500000030",
+    "9500000031",
+    "9500000032",
+    "9500000033",
+    "9500000034",
+    "9500000035",
+    "9500000036",
+    "9500000037"
+  ],
+  "all_fraud_txn_ids": [
+    "tx_03f721c2e9e547dc",
+    "tx_595d78faea8f4775",
+    "tx_fd5235bbd5d34d30",
+    "tx_0ec81118e8594661",
+    "tx_7f806a33d1f74e39",
+    "tx_7008341489b5435f",
+    "tx_c14bf81be96f407a",
+    "tx_5e9fc7dff3c04796",
+    "tx_824fc4026cae4bcc",
+    "tx_f996fb3ddd584d9d",
+    "tx_2780bd9c09b74c81",
+    "tx_7929e497ed5048eb",
+    "tx_85eb21c98fa94aab",
+    "tx_3bc2620fd4624f04",
+    "tx_e38de62bb3514f27",
+    "tx_17238341fea543fd",
+    "tx_10d3d3381b0848d0",
+    "tx_3ad7144e7e2c43d3",
+    "tx_f5d663ec107848a6",
+    "tx_ab63c3ef62cb4609",
+    "tx_16fc9517e2544a3d",
+    "tx_25c8771f4cd94de3",
+    "tx_b984d77f35ff4c6a",
+    "tx_eee320fc3c814898",
+    "tx_395881301c2347d2",
+    "tx_4319f5510ccb4f82",
+    "tx_b36fca719e8c4cc4",
+    "tx_cb6506172f51408e",
+    "tx_b5de0ecb58a04621",
+    "tx_06c4627d7e814945",
+    "tx_7ebde715c2a44883",
+    "tx_a5668dfc8ac14bb9",
+    "tx_ce3840d08c0b45aa",
+    "tx_2f3cfcb849664961",
+    "tx_0bacfd8d67404110",
+    "tx_ab74c35615e84644",
+    "tx_95642d1585374b37",
+    "tx_8f7e575ca14c4258",
+    "tx_e5eae93484a64681",
+    "tx_9586562a657d4c33",
+    "tx_093d6614b7c6446e",
+    "tx_8d5db1f7a08c4ff5",
+    "tx_a2d4f79dcde14f7e",
+    "tx_6ce780b227534592",
+    "tx_f03e19afd0384a8a",
+    "tx_87017e71b1fd499e",
+    "tx_1a9907afd2cd4def",
+    "tx_c1af4a5cebca4ab1"
+  ]
+}
